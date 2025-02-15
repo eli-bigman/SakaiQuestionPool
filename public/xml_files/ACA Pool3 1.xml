@@ -1,0 +1,3686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p3/ccv1p3_qtiasiv1p2p1_v1p0.xsd">
+  <objectbank ident="QDB_1">
+      <item ident="QUE_pool14809_1" title="ACA Pool3 1">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which of these describes good writing?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_1_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_1_1">
+                <material>
+                  <mattext texttype="text/html">Clear, overly wordy, creative</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_1_2">
+                <material>
+                  <mattext texttype="text/html">Slang language, simple, confusing</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_1_3">
+                <material>
+                  <mattext texttype="text/html">Clear, concise, error free</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_1_4">
+                <material>
+                  <mattext texttype="text/html">Wordy, simple, engaging</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_1_RL">QUE_pool14809_1_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_1_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_1_RL">QUE_pool14809_1_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_1_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_1_RL">QUE_pool14809_1_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_1_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_1_RL">QUE_pool14809_1_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_1_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_1_RL">QUE_pool14809_1_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_1_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_1_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_1_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_1_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_2" title="ACA Pool3 2">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">All these are valued skills in written communication except?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_2_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_2_1">
+                <material>
+                  <mattext texttype="text/html">Critical thinking and analytical reasoning skills</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_2_2">
+                <material>
+                  <mattext texttype="text/html">The ability to locate, organise, and evaluate information from multiple sources</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_2_3">
+                <material>
+                  <mattext texttype="text/html">The ability to analyse and solve complex problems</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_2_4">
+                <material>
+                  <mattext texttype="text/html">The ability to gather information from multiple sources and copy them word for word</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_2_RL">QUE_pool14809_2_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_2_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_2_RL">QUE_pool14809_2_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_2_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_2_RL">QUE_pool14809_2_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_2_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_2_RL">QUE_pool14809_2_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_2_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_2_RL">QUE_pool14809_2_4</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_2_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_2_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_2_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_2_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_3" title="ACA Pool3 3">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which of these do you not do when trying to understand an assignment?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_3_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_3_1">
+                <material>
+                  <mattext texttype="text/html">Determine the purpose</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_3_2">
+                <material>
+                  <mattext texttype="text/html">Recognize implied questions in the assignment</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_3_3">
+                <material>
+                  <mattext texttype="text/html">Start answering the question before brainstorming</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_3_4">
+                <material>
+                  <mattext texttype="text/html">Understand how the assignment should be answered</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_3_RL">QUE_pool14809_3_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_3_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_3_RL">QUE_pool14809_3_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_3_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_3_RL">QUE_pool14809_3_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_3_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_3_RL">QUE_pool14809_3_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_3_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_3_RL">QUE_pool14809_3_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_3_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_3_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_3_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_3_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_4" title="ACA Pool3 4">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Writing is seen as a</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_4_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_4_1">
+                <material>
+                  <mattext texttype="text/html">Linear process</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_4_2">
+                <material>
+                  <mattext texttype="text/html">Recursive process</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_4_3">
+                <material>
+                  <mattext texttype="text/html">Single draft process</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_4_4">
+                <material>
+                  <mattext texttype="text/html">Strictly outlined process</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_4_RL">QUE_pool14809_4_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_4_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_4_RL">QUE_pool14809_4_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_4_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_4_RL">QUE_pool14809_4_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_4_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_4_RL">QUE_pool14809_4_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_4_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_4_RL">QUE_pool14809_4_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_4_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_4_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_4_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_4_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_5" title="ACA Pool3 5">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">In order to write a well structured paragraph,</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_5_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_5_1">
+                <material>
+                  <mattext texttype="text/html">Think, edit, proofread, write</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_5_2">
+                <material>
+                  <mattext texttype="text/html">Brainstorm, outline, draft, edit</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_5_3">
+                <material>
+                  <mattext texttype="text/html">Skip planning, outline, edit</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_5_4">
+                <material>
+                  <mattext texttype="text/html">Think, draft, proofread, edit</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_5_RL">QUE_pool14809_5_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_5_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_5_RL">QUE_pool14809_5_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_5_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_5_RL">QUE_pool14809_5_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_5_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_5_RL">QUE_pool14809_5_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_5_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_5_RL">QUE_pool14809_5_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_5_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_5_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_5_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_5_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_6" title="ACA Pool3 6">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">All these are methods used when  brainstorming except?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_6_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_6_1">
+                <material>
+                  <mattext texttype="text/html">Listing ideas</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_6_2">
+                <material>
+                  <mattext texttype="text/html">Free writing</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_6_3">
+                <material>
+                  <mattext texttype="text/html">Mind mapping</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_6_4">
+                <material>
+                  <mattext texttype="text/html">Following a rigid structure</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_6_RL">QUE_pool14809_6_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_6_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_6_RL">QUE_pool14809_6_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_6_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_6_RL">QUE_pool14809_6_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_6_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_6_RL">QUE_pool14809_6_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_6_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_6_RL">QUE_pool14809_6_4</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_6_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_6_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_6_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_6_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_7" title="ACA Pool3 7">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">These options form part of the stages of writing except?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_7_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_7_1">
+                <material>
+                  <mattext texttype="text/html">Prewriting</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_7_2">
+                <material>
+                  <mattext texttype="text/html">Revising and editing</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_7_3">
+                <material>
+                  <mattext texttype="text/html">Being close minded</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_7_4">
+                <material>
+                  <mattext texttype="text/html">Gathering information and evidence</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_7_RL">QUE_pool14809_7_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_7_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_7_RL">QUE_pool14809_7_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_7_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_7_RL">QUE_pool14809_7_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_7_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_7_RL">QUE_pool14809_7_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_7_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_7_RL">QUE_pool14809_7_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_7_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_7_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_7_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_7_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_8" title="ACA Pool3 8">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What happens when you wait till the last minute to complete an assignment given?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_8_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_8_1">
+                <material>
+                  <mattext texttype="text/html">You are inspired</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_8_2">
+                <material>
+                  <mattext texttype="text/html">You get more ideas</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_8_3">
+                <material>
+                  <mattext texttype="text/html">You become anxious</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_8_4">
+                <material>
+                  <mattext texttype="text/html">You produce your best work</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_8_RL">QUE_pool14809_8_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_8_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_8_RL">QUE_pool14809_8_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_8_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_8_RL">QUE_pool14809_8_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_8_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_8_RL">QUE_pool14809_8_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_8_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_8_RL">QUE_pool14809_8_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_8_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_8_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_8_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_8_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_9" title="ACA Pool3 9">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">These are things you can do when fear sets in in the process of writing except?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_9_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_9_1">
+                <material>
+                  <mattext texttype="text/html">Give it a rest</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_9_2">
+                <material>
+                  <mattext texttype="text/html">Write through it</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_9_3">
+                <material>
+                  <mattext texttype="text/html">Interrogate your fear</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_9_4">
+                <material>
+                  <mattext texttype="text/html">Critique your writing skill</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_9_RL">QUE_pool14809_9_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_9_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_9_RL">QUE_pool14809_9_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_9_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_9_RL">QUE_pool14809_9_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_9_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_9_RL">QUE_pool14809_9_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_9_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_9_RL">QUE_pool14809_9_4</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_9_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_9_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_9_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_9_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_10" title="ACA Pool3 10">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">In free writing, there is a need to:</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_10_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_10_1">
+                <material>
+                  <mattext texttype="text/html">Be accurate with your writings</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_10_2">
+                <material>
+                  <mattext texttype="text/html">Not worry about your grammar or spellings</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_10_3">
+                <material>
+                  <mattext texttype="text/html">Follow strict rules</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_10_4">
+                <material>
+                  <mattext texttype="text/html">Come up with new ideas every minute</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_10_RL">QUE_pool14809_10_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_10_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_10_RL">QUE_pool14809_10_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_10_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_10_RL">QUE_pool14809_10_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_10_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_10_RL">QUE_pool14809_10_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_10_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_10_RL">QUE_pool14809_10_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_10_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_10_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_10_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_10_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_11" title="ACA Pool3 11">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">An advantage that comes with the writing process is that:</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_11_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_11_1">
+                <material>
+                  <mattext texttype="text/html">You have to finish a process thoroughly before moving to the next</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_11_2">
+                <material>
+                  <mattext texttype="text/html">You can go back to a previous step</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_11_3">
+                <material>
+                  <mattext texttype="text/html">It’s easy to get sidetracked and not make progress</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_11_4">
+                <material>
+                  <mattext texttype="text/html">You become overwhelmed</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_11_RL">QUE_pool14809_11_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_11_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_11_RL">QUE_pool14809_11_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_11_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_11_RL">QUE_pool14809_11_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_11_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_11_RL">QUE_pool14809_11_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_11_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_11_RL">QUE_pool14809_11_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_11_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_11_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_11_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_11_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_12" title="ACA Pool3 12">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">One activity that helps when writing out an assignment or any piece of writing is to</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_12_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_12_1">
+                <material>
+                  <mattext texttype="text/html">Choose not to understand what is required</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_12_2">
+                <material>
+                  <mattext texttype="text/html">Ask questions that pave way for your writing</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_12_3">
+                <material>
+                  <mattext texttype="text/html">Procrastinate and leave work until the last minute</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_12_4">
+                <material>
+                  <mattext texttype="text/html">Write without considering your intended audience</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_12_RL">QUE_pool14809_12_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_12_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_12_RL">QUE_pool14809_12_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_12_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_12_RL">QUE_pool14809_12_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_12_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_12_RL">QUE_pool14809_12_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_12_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_12_RL">QUE_pool14809_12_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_12_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_12_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_12_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_12_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_13" title="ACA Pool3 13">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How do you determine the purpose of an assignment?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_13_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_13_1">
+                <material>
+                  <mattext texttype="text/html">Through the wording of the assignment</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_13_2">
+                <material>
+                  <mattext texttype="text/html">Through other people’s answers</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_13_3">
+                <material>
+                  <mattext texttype="text/html">Through previous assignments</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_13_4">
+                <material>
+                  <mattext texttype="text/html">By focusing on elements you find interesting</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_13_RL">QUE_pool14809_13_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_13_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_13_RL">QUE_pool14809_13_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_13_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_13_RL">QUE_pool14809_13_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_13_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_13_RL">QUE_pool14809_13_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_13_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_13_RL">QUE_pool14809_13_1</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_13_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_13_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_13_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_13_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_14" title="ACA Pool3 14">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">These are things you need to establish before beginning the writing process except?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_14_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_14_1">
+                <material>
+                  <mattext texttype="text/html">Be aware of length specifications</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_14_2">
+                <material>
+                  <mattext texttype="text/html">Identify the required style of the paper</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_14_3">
+                <material>
+                  <mattext texttype="text/html">Determine the purpose of the work</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_14_4">
+                <material>
+                  <mattext texttype="text/html">Make sure your subject is very broad</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_14_RL">QUE_pool14809_14_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_14_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_14_RL">QUE_pool14809_14_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_14_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_14_RL">QUE_pool14809_14_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_14_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_14_RL">QUE_pool14809_14_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_14_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_14_RL">QUE_pool14809_14_4</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_14_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_14_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_14_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_14_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_15" title="ACA Pool3 15">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Writing can cause occasional anxiety for:</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_15_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_15_1">
+                <material>
+                  <mattext texttype="text/html">Non writers only</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_15_2">
+                <material>
+                  <mattext texttype="text/html">Students only</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_15_3">
+                <material>
+                  <mattext texttype="text/html">Anyone at all</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_15_4">
+                <material>
+                  <mattext texttype="text/html">Professional writers only</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_15_RL">QUE_pool14809_15_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_15_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_15_RL">QUE_pool14809_15_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_15_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_15_RL">QUE_pool14809_15_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_15_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_15_RL">QUE_pool14809_15_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_15_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_15_RL">QUE_pool14809_15_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_15_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_15_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_15_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_15_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_16" title="ACA Pool3 16">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What can one do when overwhelmed with the vastness of an assignment?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_16_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_16_1">
+                <material>
+                  <mattext texttype="text/html">Begin writing immediately</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_16_2">
+                <material>
+                  <mattext texttype="text/html">Ask a mate to write for you</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_16_3">
+                <material>
+                  <mattext texttype="text/html">Break it down into chunks</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_16_4">
+                <material>
+                  <mattext texttype="text/html">Be overly anxious</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_16_RL">QUE_pool14809_16_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_16_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_16_RL">QUE_pool14809_16_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_16_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_16_RL">QUE_pool14809_16_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_16_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_16_RL">QUE_pool14809_16_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_16_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_16_RL">QUE_pool14809_16_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_16_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_16_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_16_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_16_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_17" title="ACA Pool3 17">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">In brainstorming, it is important to consider the order in which your ideas are written.</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_17_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_17_1">
+                <material>
+                  <mattext texttype="text/html">True</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_17_2">
+                <material>
+                  <mattext texttype="text/html">False</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_17_3">
+                <material>
+                  <mattext texttype="text/html">It depends</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_17_RL">QUE_pool14809_17_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_17_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_17_RL">QUE_pool14809_17_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_17_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_17_RL">QUE_pool14809_17_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_17_3_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_17_RL">QUE_pool14809_17_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_17_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_17_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_17_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_18" title="ACA Pool3 18">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of background research?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_18_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_18_1">
+                <material>
+                  <mattext texttype="text/html">To fill in gaps in knowledge</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_18_2">
+                <material>
+                  <mattext texttype="text/html">To identify sources of conflict</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_18_3">
+                <material>
+                  <mattext texttype="text/html">All of the above</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_18_4">
+                <material>
+                  <mattext texttype="text/html">None</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_18_RL">QUE_pool14809_18_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_18_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_18_RL">QUE_pool14809_18_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_18_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_18_RL">QUE_pool14809_18_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_18_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_18_RL">QUE_pool14809_18_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_18_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_18_RL">QUE_pool14809_18_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_18_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_18_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_18_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_18_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_19" title="ACA Pool3 19">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The research process is strictly a linear process</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_19_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_19_1">
+                <material>
+                  <mattext texttype="text/html">True</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_19_2">
+                <material>
+                  <mattext texttype="text/html">False</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_19_3">
+                <material>
+                  <mattext texttype="text/html">Sometimes</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_19_RL">QUE_pool14809_19_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_19_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_19_RL">QUE_pool14809_19_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_19_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_19_RL">QUE_pool14809_19_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_19_3_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_19_RL">QUE_pool14809_19_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_19_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_19_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_19_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_20" title="ACA Pool3 20">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which of the following best describes the recommended process for narrowing a research topic?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_20_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_20_1">
+                <material>
+                  <mattext texttype="text/html">Jump straight to formulating a thesis statement</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_20_2">
+                <material>
+                  <mattext texttype="text/html">Move from a broad subject to a more focused topic to a specific issue</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_20_3">
+                <material>
+                  <mattext texttype="text/html">Begin with background research then formulate questions</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_20_4">
+                <material>
+                  <mattext texttype="text/html">Start with secondary questions then determine primary sources</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_20_RL">QUE_pool14809_20_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_20_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_20_RL">QUE_pool14809_20_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_20_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_20_RL">QUE_pool14809_20_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_20_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_20_RL">QUE_pool14809_20_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_20_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_20_RL">QUE_pool14809_20_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_20_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_20_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_20_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_20_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_21" title="ACA Pool3 21">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">A working thesis statement does all the following except?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_21_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_21_1">
+                <material>
+                  <mattext texttype="text/html">Narrows the subject to the single point that readers should understand</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_21_2">
+                <material>
+                  <mattext texttype="text/html">Names the topic and makes a significant assertion about that topic</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_21_3">
+                <material>
+                  <mattext texttype="text/html">Conveys the purpose</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_21_4">
+                <material>
+                  <mattext texttype="text/html">Specifies the research methodology employed</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_21_RL">QUE_pool14809_21_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_21_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_21_RL">QUE_pool14809_21_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_21_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_21_RL">QUE_pool14809_21_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_21_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_21_RL">QUE_pool14809_21_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_21_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_21_RL">QUE_pool14809_21_4</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_21_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_21_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_21_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_21_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_22" title="ACA Pool3 22">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Students are encouraged to make use of  _____ more often for their research</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_22_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_22_1">
+                <material>
+                  <mattext texttype="text/html">Web</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_22_2">
+                <material>
+                  <mattext texttype="text/html">Their lecturers</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_22_3">
+                <material>
+                  <mattext texttype="text/html">The library</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_22_4">
+                <material>
+                  <mattext texttype="text/html">Their peers</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_22_RL">QUE_pool14809_22_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_22_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_22_RL">QUE_pool14809_22_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_22_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_22_RL">QUE_pool14809_22_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_22_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_22_RL">QUE_pool14809_22_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_22_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_22_RL">QUE_pool14809_22_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_22_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_22_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_22_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_22_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_23" title="ACA Pool3 23">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which of these options does not fall into the research process?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_23_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_23_1">
+                <material>
+                  <mattext texttype="text/html">Defining the topic</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_23_2">
+                <material>
+                  <mattext texttype="text/html">Gathering background information</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_23_3">
+                <material>
+                  <mattext texttype="text/html">Asking for peer reviews</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_23_4">
+                <material>
+                  <mattext texttype="text/html">Citing sources</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_23_RL">QUE_pool14809_23_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_23_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_23_RL">QUE_pool14809_23_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_23_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_23_RL">QUE_pool14809_23_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_23_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_23_RL">QUE_pool14809_23_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_23_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_23_RL">QUE_pool14809_23_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_23_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_23_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_23_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_23_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_24" title="ACA Pool3 24">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Why is it important to finish one step before the other in the research process?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_24_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_24_1">
+                <material>
+                  <mattext texttype="text/html">To save time</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_24_2">
+                <material>
+                  <mattext texttype="text/html">To get accurate information</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_24_3">
+                <material>
+                  <mattext texttype="text/html">It is not necessary to do so</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_24_4">
+                <material>
+                  <mattext texttype="text/html">To make the process smooth</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_24_RL">QUE_pool14809_24_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_24_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_24_RL">QUE_pool14809_24_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_24_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_24_RL">QUE_pool14809_24_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_24_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_24_RL">QUE_pool14809_24_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_24_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_24_RL">QUE_pool14809_24_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_24_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_24_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_24_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_24_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_25" title="ACA Pool3 25">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you keep track of your research citations while working?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_25_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_25_1">
+                <material>
+                  <mattext texttype="text/html">By writing them down</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_25_2">
+                <material>
+                  <mattext texttype="text/html">By using reference management programs</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_25_3">
+                <material>
+                  <mattext texttype="text/html">By storing them in a folder</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_25_4">
+                <material>
+                  <mattext texttype="text/html">By waiting till the end of your writing</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_25_RL">QUE_pool14809_25_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_25_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_25_RL">QUE_pool14809_25_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_25_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_25_RL">QUE_pool14809_25_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_25_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_25_RL">QUE_pool14809_25_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_25_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_25_RL">QUE_pool14809_25_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_25_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_25_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_25_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_25_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_26" title="ACA Pool3 26">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What does the CRAP method stand for?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_26_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_26_1">
+                <material>
+                  <mattext texttype="text/html">Credibility, Redundancy, Availability, Perfection</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_26_2">
+                <material>
+                  <mattext texttype="text/html">Currency, Reliability, Authority, Purpose/Point of view</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_26_3">
+                <material>
+                  <mattext texttype="text/html">Credibility, Reliability, Archive, Purpose</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_26_4">
+                <material>
+                  <mattext texttype="text/html">Currency, Reliability, Availability, Purpose/point of view</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_26_RL">QUE_pool14809_26_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_26_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_26_RL">QUE_pool14809_26_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_26_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_26_RL">QUE_pool14809_26_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_26_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_26_RL">QUE_pool14809_26_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_26_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_26_RL">QUE_pool14809_26_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_26_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_26_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_26_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_26_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_27" title="ACA Pool3 27">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">When evaluating currency, which of the following would be most important?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_27_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_27_1">
+                <material>
+                  <mattext texttype="text/html">The number of citations</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_27_2">
+                <material>
+                  <mattext texttype="text/html">The author’s credentials</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_27_3">
+                <material>
+                  <mattext texttype="text/html">The publication date</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_27_4">
+                <material>
+                  <mattext texttype="text/html">The reputation of the publisher</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_27_RL">QUE_pool14809_27_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_27_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_27_RL">QUE_pool14809_27_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_27_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_27_RL">QUE_pool14809_27_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_27_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_27_RL">QUE_pool14809_27_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_27_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_27_RL">QUE_pool14809_27_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_27_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_27_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_27_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_27_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_28" title="ACA Pool3 28">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which criteria of the CRAP method involves detecting bias or loaded language?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_28_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_28_1">
+                <material>
+                  <mattext texttype="text/html">Currency</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_28_2">
+                <material>
+                  <mattext texttype="text/html">Reliability</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_28_3">
+                <material>
+                  <mattext texttype="text/html">Authority</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_28_4">
+                <material>
+                  <mattext texttype="text/html">Purpose/Point of view</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_28_RL">QUE_pool14809_28_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_28_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_28_RL">QUE_pool14809_28_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_28_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_28_RL">QUE_pool14809_28_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_28_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_28_RL">QUE_pool14809_28_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_28_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_28_RL">QUE_pool14809_28_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_28_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_28_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_28_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_28_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_29" title="ACA Pool3 29">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which criteria of the CRAAP test methods is most important when timeliness is crucial?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_29_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_29_1">
+                <material>
+                  <mattext texttype="text/html">Accuracy</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_29_2">
+                <material>
+                  <mattext texttype="text/html">Authority</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_29_3">
+                <material>
+                  <mattext texttype="text/html">Purpose</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_29_4">
+                <material>
+                  <mattext texttype="text/html">Currency</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_29_RL">QUE_pool14809_29_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_29_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_29_RL">QUE_pool14809_29_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_29_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_29_RL">QUE_pool14809_29_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_29_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_29_RL">QUE_pool14809_29_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_29_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_29_RL">QUE_pool14809_29_4</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_29_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_29_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_29_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_29_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_30" title="ACA Pool3 30">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which of the CRAAP test methods involves assessing spelling, grammar and errors?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_30_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_30_1">
+                <material>
+                  <mattext texttype="text/html">Relevance</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_30_2">
+                <material>
+                  <mattext texttype="text/html">Authority</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_30_3">
+                <material>
+                  <mattext texttype="text/html">Currency</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_30_4">
+                <material>
+                  <mattext texttype="text/html">Accuracy</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_30_RL">QUE_pool14809_30_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_30_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_30_RL">QUE_pool14809_30_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_30_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_30_RL">QUE_pool14809_30_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_30_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_30_RL">QUE_pool14809_30_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_30_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_30_RL">QUE_pool14809_30_4</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_30_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_30_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_30_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_30_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_31" title="ACA Pool3 31">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which of the CRAAP test methods discriminates between objective information from bias or emotion?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_31_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_31_1">
+                <material>
+                  <mattext texttype="text/html">Currency</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_31_2">
+                <material>
+                  <mattext texttype="text/html">Purpose</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_31_3">
+                <material>
+                  <mattext texttype="text/html">Authority</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_31_4">
+                <material>
+                  <mattext texttype="text/html">Accuracy</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_31_RL">QUE_pool14809_31_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_31_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_31_RL">QUE_pool14809_31_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_31_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_31_RL">QUE_pool14809_31_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_31_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_31_RL">QUE_pool14809_31_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_31_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_31_RL">QUE_pool14809_31_4</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_31_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_31_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_31_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_31_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_32" title="ACA Pool3 32">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Paraphrasing a text means:</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_32_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_32_1">
+                <material>
+                  <mattext texttype="text/html">making it shorter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_32_2">
+                <material>
+                  <mattext texttype="text/html">changing a lot of the vocabulary</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_32_3">
+                <material>
+                  <mattext texttype="text/html">adding more detail</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_32_RL">QUE_pool14809_32_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_32_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_32_RL">QUE_pool14809_32_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_32_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_32_RL">QUE_pool14809_32_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_32_3_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_32_RL">QUE_pool14809_32_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_32_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_32_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_32_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_33" title="ACA Pool3 33">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The purpose of an introduction is:</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_33_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_33_1">
+                <material>
+                  <mattext texttype="text/html">to give your aims and methods</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_33_2">
+                <material>
+                  <mattext texttype="text/html">to excite the reader</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_33_3">
+                <material>
+                  <mattext texttype="text/html">to summarise your ideas</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_33_RL">QUE_pool14809_33_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_33_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_33_RL">QUE_pool14809_33_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_33_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_33_RL">QUE_pool14809_33_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_33_3_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_33_RL">QUE_pool14809_33_1</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_33_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_33_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_33_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_34" title="ACA Pool3 34">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Copying a paragraph, but changing one or two and giving a citation can be</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_34_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_34_1">
+                <material>
+                  <mattext texttype="text/html">Citation</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_34_2">
+                <material>
+                  <mattext texttype="text/html">Plagiarism</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_34_3">
+                <material>
+                  <mattext texttype="text/html">Acknowledgement</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_34_RL">QUE_pool14809_34_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_34_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_34_RL">QUE_pool14809_34_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_34_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_34_RL">QUE_pool14809_34_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_34_3_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_34_RL">QUE_pool14809_34_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_34_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_34_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_34_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_35" title="ACA Pool3 35">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Reducing the length of a text but retaining the main points can be termed as:</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_35_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_35_1">
+                <material>
+                  <mattext texttype="text/html">Plagiarism</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_35_2">
+                <material>
+                  <mattext texttype="text/html">Paraphrasing</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_35_3">
+                <material>
+                  <mattext texttype="text/html">Summarising</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_35_4">
+                <material>
+                  <mattext texttype="text/html">Referencing</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_35_RL">QUE_pool14809_35_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_35_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_35_RL">QUE_pool14809_35_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_35_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_35_RL">QUE_pool14809_35_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_35_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_35_RL">QUE_pool14809_35_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_35_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_35_RL">QUE_pool14809_35_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_35_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_35_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_35_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_35_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_36" title="ACA Pool3 36">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which of these is not a characteristic of an effective paraphrase?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_36_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_36_1">
+                <material>
+                  <mattext texttype="text/html">has a different structure to the original</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_36_2">
+                <material>
+                  <mattext texttype="text/html">has mainly different vocabulary</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_36_3">
+                <material>
+                  <mattext texttype="text/html">introduces a different meaning</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_36_4">
+                <material>
+                  <mattext texttype="text/html">keeps some phrases from the original that are in common use</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_36_RL">QUE_pool14809_36_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_36_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_36_RL">QUE_pool14809_36_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_36_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_36_RL">QUE_pool14809_36_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_36_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_36_RL">QUE_pool14809_36_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_36_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_36_RL">QUE_pool14809_36_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_36_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_36_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_36_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_36_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_37" title="ACA Pool3 37">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What are the three stages of effective reading?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_37_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_37_1">
+                <material>
+                  <mattext texttype="text/html">Introduction, body, conclusion</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_37_2">
+                <material>
+                  <mattext texttype="text/html">Pre-reading, active reading, post-reading</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_37_3">
+                <material>
+                  <mattext texttype="text/html">Skimming, scanning, analysing</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_37_4">
+                <material>
+                  <mattext texttype="text/html">Gathering, organising, evaluating</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_37_RL">QUE_pool14809_37_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_37_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_37_RL">QUE_pool14809_37_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_37_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_37_RL">QUE_pool14809_37_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_37_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_37_RL">QUE_pool14809_37_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_37_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_37_RL">QUE_pool14809_37_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_37_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_37_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_37_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_37_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_38" title="ACA Pool3 38">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What should be excluded from a summary?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_38_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_38_1">
+                <material>
+                  <mattext texttype="text/html">Introduction and conclusion</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_38_2">
+                <material>
+                  <mattext texttype="text/html">Main points of the text</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_38_3">
+                <material>
+                  <mattext texttype="text/html">Personal opinions</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_38_4">
+                <material>
+                  <mattext texttype="text/html">Accurate representation of the original text</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_38_RL">QUE_pool14809_38_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_38_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_38_RL">QUE_pool14809_38_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_38_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_38_RL">QUE_pool14809_38_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_38_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_38_RL">QUE_pool14809_38_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_38_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_38_RL">QUE_pool14809_38_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_38_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_38_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_38_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_38_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_39" title="ACA Pool3 39">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How should a well-organised summary be structured?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_39_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_39_1">
+                <material>
+                  <mattext texttype="text/html">Introduction, main points, conclusion</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_39_2">
+                <material>
+                  <mattext texttype="text/html">Pre-reading, active reading, post-reading</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_39_3">
+                <material>
+                  <mattext texttype="text/html">Main points, examples, personal opinions</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_39_4">
+                <material>
+                  <mattext texttype="text/html">Background information, analysis, critique</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_39_RL">QUE_pool14809_39_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_39_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_39_RL">QUE_pool14809_39_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_39_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_39_RL">QUE_pool14809_39_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_39_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_39_RL">QUE_pool14809_39_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_39_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_39_RL">QUE_pool14809_39_1</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_39_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_39_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_39_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_39_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool14809_40" title="ACA Pool3 40">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Making predictions about the probable meaning of a text is not an effective reading strategy?</mattext>
+          </material>
+          <response_lid ident="QUE_pool14809_40_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool14809_40_1">
+                <material>
+                  <mattext texttype="text/html">True</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_40_2">
+                <material>
+                  <mattext texttype="text/html">False</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_40_3">
+                <material>
+                  <mattext texttype="text/html">It depends</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool14809_40_4">
+                <material>
+                  <mattext texttype="text/html">Sometimes</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_40_RL">QUE_pool14809_40_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_40_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_40_RL">QUE_pool14809_40_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_40_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_40_RL">QUE_pool14809_40_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_40_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool14809_40_RL">QUE_pool14809_40_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool14809_40_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool14809_40_RL">QUE_pool14809_40_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool14809_40_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_40_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_40_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool14809_40_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+  </objectbank>
+</questestinterop>

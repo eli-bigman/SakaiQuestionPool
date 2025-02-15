@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p3/ccv1p3_qtiasiv1p2p1_v1p0.xsd">
+  <objectbank ident="QDB_1">
+      <item ident="QUE_pool13675_1" title="MCQ 7 1">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the primary purpose of MIMO technology in wireless communication systems?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13675_1_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13675_1_1">
+                <material>
+                  <mattext texttype="text/html">Reduce interference from neighboring cells</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_1_2">
+                <material>
+                  <mattext texttype="text/html">Enhance channel coding techniques</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_1_3">
+                <material>
+                  <mattext texttype="text/html">Increase data transmission speed</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_1_4">
+                <material>
+                  <mattext texttype="text/html">Improve network security</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_1_RL">QUE_pool13675_1_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_1_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_1_RL">QUE_pool13675_1_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_1_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_1_RL">QUE_pool13675_1_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_1_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_1_RL">QUE_pool13675_1_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_1_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13675_1_RL">QUE_pool13675_1_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13675_1_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_1_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_1_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_1_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13675_2" title="MCQ 7 2">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which of the following is a characteristic of MIMO systems?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13675_2_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13675_2_1">
+                <material>
+                  <mattext texttype="text/html">Single antenna at the transmitter and multiple antennas at the receiver</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_2_2">
+                <material>
+                  <mattext texttype="text/html">Multiple antennas at the transmitter and receiver</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_2_3">
+                <material>
+                  <mattext texttype="text/html">Single antenna at both the transmitter and receiver</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_2_4">
+                <material>
+                  <mattext texttype="text/html">No antennas at the transmitter or receiver</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_2_RL">QUE_pool13675_2_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_2_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_2_RL">QUE_pool13675_2_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_2_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_2_RL">QUE_pool13675_2_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_2_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_2_RL">QUE_pool13675_2_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_2_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13675_2_RL">QUE_pool13675_2_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13675_2_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_2_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_2_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_2_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13675_3" title="MCQ 7 3">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the primary advantage of High-Speed Packet Access (HSPA) in mobile communication systems?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13675_3_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13675_3_1">
+                <material>
+                  <mattext texttype="text/html">Enhanced network security</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_3_2">
+                <material>
+                  <mattext texttype="text/html">Increased data transmission rates</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_3_3">
+                <material>
+                  <mattext texttype="text/html">Reduced signal propagation delay</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_3_4">
+                <material>
+                  <mattext texttype="text/html">Improved frequency modulation</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_3_RL">QUE_pool13675_3_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_3_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_3_RL">QUE_pool13675_3_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_3_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_3_RL">QUE_pool13675_3_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_3_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_3_RL">QUE_pool13675_3_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_3_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13675_3_RL">QUE_pool13675_3_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13675_3_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_3_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_3_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_3_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13675_4" title="MCQ 7 4">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the primary purpose of Long-Term Evolution (LTE) technology in telecommunications?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13675_4_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13675_4_1">
+                <material>
+                  <mattext texttype="text/html">Increase network coverage in rural areas</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_4_2">
+                <material>
+                  <mattext texttype="text/html">Enhance network security</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_4_3">
+                <material>
+                  <mattext texttype="text/html">Provide high-speed data transmission</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_4_4">
+                <material>
+                  <mattext texttype="text/html">Improve frequency modulation techniques</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_4_RL">QUE_pool13675_4_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_4_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_4_RL">QUE_pool13675_4_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_4_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_4_RL">QUE_pool13675_4_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_4_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_4_RL">QUE_pool13675_4_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_4_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13675_4_RL">QUE_pool13675_4_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13675_4_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_4_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_4_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_4_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13675_5" title="MCQ 7 5">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which of the following is a characteristic of LTE networks?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13675_5_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13675_5_1">
+                <material>
+                  <mattext texttype="text/html">Circuit-switched voice calls</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_5_2">
+                <material>
+                  <mattext texttype="text/html">Narrowband communication</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_5_3">
+                <material>
+                  <mattext texttype="text/html">Support for IP-based communication</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_5_4">
+                <material>
+                  <mattext texttype="text/html">Low data transfer rates</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_5_RL">QUE_pool13675_5_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_5_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_5_RL">QUE_pool13675_5_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_5_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_5_RL">QUE_pool13675_5_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_5_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_5_RL">QUE_pool13675_5_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_5_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13675_5_RL">QUE_pool13675_5_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13675_5_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_5_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_5_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_5_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13675_6" title="MCQ 7 6">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which technique is used in LTE to improve uplink transmission efficiency?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13675_6_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13675_6_1">
+                <material>
+                  <mattext texttype="text/html">MIMO technology</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_6_2">
+                <material>
+                  <mattext texttype="text/html">Frequency Division Multiple Access (FDMA)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_6_3">
+                <material>
+                  <mattext texttype="text/html">Carrier Aggregation (CA)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_6_4">
+                <material>
+                  <mattext texttype="text/html">Beamforming</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_6_RL">QUE_pool13675_6_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_6_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_6_RL">QUE_pool13675_6_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_6_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_6_RL">QUE_pool13675_6_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_6_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_6_RL">QUE_pool13675_6_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_6_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13675_6_RL">QUE_pool13675_6_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13675_6_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_6_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_6_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_6_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13675_7" title="MCQ 7 7">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the primary advantage of using LTE networks for voice calls?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13675_7_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13675_7_1">
+                <material>
+                  <mattext texttype="text/html">Higher voice quality</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_7_2">
+                <material>
+                  <mattext texttype="text/html">Reduced signal propagation delay</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_7_3">
+                <material>
+                  <mattext texttype="text/html">Enhanced network security</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_7_4">
+                <material>
+                  <mattext texttype="text/html">Improved channel coding techniques</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_7_RL">QUE_pool13675_7_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_7_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_7_RL">QUE_pool13675_7_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_7_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_7_RL">QUE_pool13675_7_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_7_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_7_RL">QUE_pool13675_7_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_7_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13675_7_RL">QUE_pool13675_7_1</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13675_7_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_7_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_7_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_7_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13675_8" title="MCQ 7 8">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of LTE handover procedures?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13675_8_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13675_8_1">
+                <material>
+                  <mattext texttype="text/html">Reduce network latency</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_8_2">
+                <material>
+                  <mattext texttype="text/html">Maintain uninterrupted service during mobility</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_8_3">
+                <material>
+                  <mattext texttype="text/html">Enhance modulation techniques</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_8_4">
+                <material>
+                  <mattext texttype="text/html">Increase network coverage</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_8_RL">QUE_pool13675_8_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_8_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_8_RL">QUE_pool13675_8_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_8_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_8_RL">QUE_pool13675_8_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_8_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_8_RL">QUE_pool13675_8_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_8_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13675_8_RL">QUE_pool13675_8_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13675_8_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_8_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_8_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_8_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13675_9" title="MCQ 7 9">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of LTE Quality of Service (QoS) mechanisms?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13675_9_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13675_9_1">
+                <material>
+                  <mattext texttype="text/html">Ensure fair resource allocation</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_9_2">
+                <material>
+                  <mattext texttype="text/html">Reduce signal propagation delay</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_9_3">
+                <material>
+                  <mattext texttype="text/html">Improve channel coding techniques</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_9_4">
+                <material>
+                  <mattext texttype="text/html">Enhance network security</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_9_RL">QUE_pool13675_9_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_9_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_9_RL">QUE_pool13675_9_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_9_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_9_RL">QUE_pool13675_9_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_9_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_9_RL">QUE_pool13675_9_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_9_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13675_9_RL">QUE_pool13675_9_1</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13675_9_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_9_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_9_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_9_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13675_10" title="MCQ 7 10">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which technique is used in LTE systems to improve downlink transmission efficiency?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13675_10_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13675_10_1">
+                <material>
+                  <mattext texttype="text/html">MIMO technology</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_10_2">
+                <material>
+                  <mattext texttype="text/html">Frequency Division Multiple Access (FDMA)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_10_3">
+                <material>
+                  <mattext texttype="text/html">Orthogonal Frequency Division Multiple Access (OFDMA)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13675_10_4">
+                <material>
+                  <mattext texttype="text/html">Spread spectrum</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_10_RL">QUE_pool13675_10_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_10_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_10_RL">QUE_pool13675_10_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_10_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_10_RL">QUE_pool13675_10_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_10_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13675_10_RL">QUE_pool13675_10_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13675_10_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13675_10_RL">QUE_pool13675_10_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13675_10_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_10_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_10_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13675_10_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+  </objectbank>
+</questestinterop>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p3/ccv1p3_qtiasiv1p2p1_v1p0.xsd">
+  <objectbank ident="QDB_1">
+      <item ident="QUE_pool11614_1" title="wer 1">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.true_false.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">A packet monkey is an unskilled programmer who spreads viruses and other malicious scripts to exploit computer weaknesses.</mattext>
+          </material>
+          <response_lid ident="QUE_pool11614_1_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="true">
+                <material>
+                  <mattext texttype="text/html">true</mattext>
+                </material>
+              </response_label>
+              <response_label ident="false">
+                <material>
+                  <mattext texttype="text/html">false</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool11614_1_RL">false</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="QUE_pool11614_2" title="wer 2">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.true_false.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">A worm creates files that copy themselves repeatedly and consume disk space.</mattext>
+          </material>
+          <response_lid ident="QUE_pool11614_2_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="true">
+                <material>
+                  <mattext texttype="text/html">true</mattext>
+                </material>
+              </response_label>
+              <response_label ident="false">
+                <material>
+                  <mattext texttype="text/html">false</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool11614_2_RL">true</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="QUE_pool11614_3" title="wer 3">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.true_false.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Physical security protects a system from theft, fire, or environmental disaster.</mattext>
+          </material>
+          <response_lid ident="QUE_pool11614_3_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="true">
+                <material>
+                  <mattext texttype="text/html">true</mattext>
+                </material>
+              </response_label>
+              <response_label ident="false">
+                <material>
+                  <mattext texttype="text/html">false</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool11614_3_RL">true</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="QUE_pool11614_4" title="wer 4">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.true_false.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Reviewing log files is a time-consuming task and therefore should only be done when an attack on the network has occurred.</mattext>
+          </material>
+          <response_lid ident="QUE_pool11614_4_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="true">
+                <material>
+                  <mattext texttype="text/html">true</mattext>
+                </material>
+              </response_label>
+              <response_label ident="false">
+                <material>
+                  <mattext texttype="text/html">false</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool11614_4_RL">false</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+  </objectbank>
+</questestinterop>

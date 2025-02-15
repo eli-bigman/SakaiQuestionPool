@@ -1,0 +1,4236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p3/ccv1p3_qtiasiv1p2p1_v1p0.xsd">
+  <objectbank ident="QDB_1">
+      <item ident="QUE_pool13418_1" title="HCI POOL 1 1">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you create a gradient fill for a shape in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_1_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_1_1">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Gradient Fill&amp;quot; tool from the toolbar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_1_2">
+                <material>
+                  <mattext texttype="text/html">Select the shape, go to the right sidebar, and add a gradient fill in the &amp;quot;Fill&amp;quot; section.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_1_3">
+                <material>
+                  <mattext texttype="text/html">Right-click the shape and choose &amp;quot;Add Gradient Fill.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_1_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Gradient Fill&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_1_RL">QUE_pool13418_1_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_1_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_1_RL">QUE_pool13418_1_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_1_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_1_RL">QUE_pool13418_1_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_1_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_1_RL">QUE_pool13418_1_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_1_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_1_RL">QUE_pool13418_1_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_1_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_1_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_1_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_1_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_2" title="HCI POOL 1 2">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Slice&amp;quot; feature in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_2_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_2_1">
+                <material>
+                  <mattext texttype="text/html">To cut a design file into multiple sections for easier navigation.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_2_2">
+                <material>
+                  <mattext texttype="text/html">To remove unwanted portions of the design.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_2_3">
+                <material>
+                  <mattext texttype="text/html">To export specific sections of the design as individual image assets.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_2_4">
+                <material>
+                  <mattext texttype="text/html">To share a specific section of the design with others.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_2_RL">QUE_pool13418_2_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_2_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_2_RL">QUE_pool13418_2_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_2_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_2_RL">QUE_pool13418_2_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_2_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_2_RL">QUE_pool13418_2_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_2_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_2_RL">QUE_pool13418_2_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_2_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_2_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_2_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_2_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_3" title="HCI POOL 1 3">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you group layers together in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_3_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_3_1">
+                <material>
+                  <mattext texttype="text/html">Select the layers, right-click, and choose &amp;quot;Group.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_3_2">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Group Layers&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_3_3">
+                <material>
+                  <mattext texttype="text/html">Drag and drop the layers onto each other.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_3_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Group&amp;quot; tool from the toolbar.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_3_RL">QUE_pool13418_3_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_3_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_3_RL">QUE_pool13418_3_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_3_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_3_RL">QUE_pool13418_3_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_3_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_3_RL">QUE_pool13418_3_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_3_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_3_RL">QUE_pool13418_3_1</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_3_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_3_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_3_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_3_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_4" title="HCI POOL 1 4">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Redline&amp;quot; feature in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_4_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_4_1">
+                <material>
+                  <mattext texttype="text/html">To mark design elements for removal or modification.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_4_2">
+                <material>
+                  <mattext texttype="text/html">To highlight specific sections of the design for emphasis.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_4_3">
+                <material>
+                  <mattext texttype="text/html">To add comments and annotations for developers or stakeholders.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_4_4">
+                <material>
+                  <mattext texttype="text/html">To collaborate with team members on design reviews.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_4_RL">QUE_pool13418_4_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_4_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_4_RL">QUE_pool13418_4_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_4_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_4_RL">QUE_pool13418_4_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_4_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_4_RL">QUE_pool13418_4_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_4_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_4_RL">QUE_pool13418_4_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_4_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_4_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_4_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_4_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_5" title="HCI POOL 1 5">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you adjust the opacity of a layer in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_5_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_5_1">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Opacity&amp;quot; tool from the toolbar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_5_2">
+                <material>
+                  <mattext texttype="text/html">Select the layer and adjust the opacity value in the right sidebar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_5_3">
+                <material>
+                  <mattext texttype="text/html">Right-click the layer and choose &amp;quot;Adjust Opacity.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_5_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Opacity&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_5_RL">QUE_pool13418_5_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_5_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_5_RL">QUE_pool13418_5_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_5_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_5_RL">QUE_pool13418_5_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_5_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_5_RL">QUE_pool13418_5_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_5_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_5_RL">QUE_pool13418_5_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_5_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_5_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_5_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_5_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_6" title="HCI POOL 1 6">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you create a scrollable area in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_6_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_6_1">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Scrollable Area&amp;quot; tool from the toolbar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_6_2">
+                <material>
+                  <mattext texttype="text/html">Apply a mask to a group of layers.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_6_3">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Overflow&amp;quot; property in the right sidebar and set it to &amp;quot;Scroll&amp;quot; or &amp;quot;Auto.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_6_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Create Scrollable Area&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_6_RL">QUE_pool13418_6_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_6_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_6_RL">QUE_pool13418_6_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_6_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_6_RL">QUE_pool13418_6_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_6_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_6_RL">QUE_pool13418_6_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_6_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_6_RL">QUE_pool13418_6_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_6_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_6_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_6_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_6_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_7" title="HCI POOL 1 7">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you rotate a layer in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_7_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_7_1">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Rotate&amp;quot; tool from the toolbar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_7_2">
+                <material>
+                  <mattext texttype="text/html">Select the layer and adjust the rotation angle in the right sidebar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_7_3">
+                <material>
+                  <mattext texttype="text/html">Right-click the layer and choose &amp;quot;Rotate.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_7_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Rotate&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_7_RL">QUE_pool13418_7_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_7_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_7_RL">QUE_pool13418_7_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_7_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_7_RL">QUE_pool13418_7_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_7_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_7_RL">QUE_pool13418_7_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_7_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_7_RL">QUE_pool13418_7_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_7_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_7_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_7_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_7_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_8" title="HCI POOL 1 8">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Export&amp;quot; feature in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_8_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_8_1">
+                <material>
+                  <mattext texttype="text/html">To save the design file in a different format.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_8_2">
+                <material>
+                  <mattext texttype="text/html">To export design assets for development or use in other applications.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_8_3">
+                <material>
+                  <mattext texttype="text/html">To generate design specifications and style guides.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_8_4">
+                <material>
+                  <mattext texttype="text/html">To share the design with clients and stakeholders.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_8_RL">QUE_pool13418_8_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_8_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_8_RL">QUE_pool13418_8_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_8_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_8_RL">QUE_pool13418_8_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_8_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_8_RL">QUE_pool13418_8_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_8_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_8_RL">QUE_pool13418_8_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_8_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_8_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_8_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_8_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_9" title="HCI POOL 1 9">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you duplicate a layer in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_9_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_9_1">
+                <material>
+                  <mattext texttype="text/html">Right-click the layer and choose &amp;quot;Duplicate.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_9_2">
+                <material>
+                  <mattext texttype="text/html">Select the layer and press Command + D (Mac. or Control + D (Windows).</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_9_3">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Duplicate Layer&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_9_4">
+                <material>
+                  <mattext texttype="text/html">Drag and drop the layer while holding the Option (Mac. or Alt (Windows) key.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_9_RL">QUE_pool13418_9_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_9_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_9_RL">QUE_pool13418_9_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_9_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_9_RL">QUE_pool13418_9_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_9_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_9_RL">QUE_pool13418_9_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_9_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_9_RL">QUE_pool13418_9_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_9_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_9_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_9_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_9_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_10" title="HCI POOL 1 10">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you zoom in and out of the canvas in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_10_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_10_1">
+                <material>
+                  <mattext texttype="text/html">Use the zoom slider in the toolbar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_10_2">
+                <material>
+                  <mattext texttype="text/html">Press Command + Plus (Mac. or Control + Plus (Windows) to zoom in and Command + Minus (Mac. or Control + Minus (Windows) to zoom out.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_10_3">
+                <material>
+                  <mattext texttype="text/html">Right-click the canvas and choose &amp;quot;Zoom In&amp;quot; or &amp;quot;Zoom Out.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_10_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Zoom&amp;quot; option in the View menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_10_RL">QUE_pool13418_10_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_10_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_10_RL">QUE_pool13418_10_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_10_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_10_RL">QUE_pool13418_10_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_10_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_10_RL">QUE_pool13418_10_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_10_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_10_RL">QUE_pool13418_10_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_10_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_10_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_10_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_10_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_11" title="HCI POOL 1 11">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you group multiple layers together in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_11_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_11_1">
+                <material>
+                  <mattext texttype="text/html">Right-click and select &amp;quot;Group.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_11_2">
+                <material>
+                  <mattext texttype="text/html">Select the layers, then press Command + G (Mac. or Control + G (Windows).</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_11_3">
+                <material>
+                  <mattext texttype="text/html">Drag and drop the layers onto each other.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_11_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Group&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_11_RL">QUE_pool13418_11_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_11_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_11_RL">QUE_pool13418_11_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_11_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_11_RL">QUE_pool13418_11_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_11_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_11_RL">QUE_pool13418_11_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_11_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_11_RL">QUE_pool13418_11_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_11_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_11_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_11_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_11_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_12" title="HCI POOL 1 12">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Slice&amp;quot; tool in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_12_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_12_1">
+                <material>
+                  <mattext texttype="text/html">To crop and resize images in the design.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_12_2">
+                <material>
+                  <mattext texttype="text/html">To export specific sections of the design for web or development.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_12_3">
+                <material>
+                  <mattext texttype="text/html">To create custom shapes and icons.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_12_4">
+                <material>
+                  <mattext texttype="text/html">To apply advanced masking effects to design elements.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_12_RL">QUE_pool13418_12_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_12_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_12_RL">QUE_pool13418_12_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_12_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_12_RL">QUE_pool13418_12_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_12_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_12_RL">QUE_pool13418_12_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_12_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_12_RL">QUE_pool13418_12_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_12_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_12_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_12_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_12_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_13" title="HCI POOL 1 13">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you adjust the opacity of a layer in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_13_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_13_1">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Opacity&amp;quot; slider in the Layers panel.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_13_2">
+                <material>
+                  <mattext texttype="text/html">Select the layer and adjust the opacity value in the right sidebar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_13_3">
+                <material>
+                  <mattext texttype="text/html">Right-click the layer and choose &amp;quot;Adjust Opacity.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_13_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Opacity&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_13_RL">QUE_pool13418_13_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_13_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_13_RL">QUE_pool13418_13_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_13_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_13_RL">QUE_pool13418_13_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_13_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_13_RL">QUE_pool13418_13_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_13_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_13_RL">QUE_pool13418_13_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_13_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_13_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_13_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_13_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_14" title="HCI POOL 1 14">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you align multiple layers horizontally in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_14_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_14_1">
+                <material>
+                  <mattext texttype="text/html">Use the Align panel and select the desired alignment option.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_14_2">
+                <material>
+                  <mattext texttype="text/html">Right-click the layers and choose &amp;quot;Align Horizontally.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_14_3">
+                <material>
+                  <mattext texttype="text/html">Select the layers, then press Shift + H.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_14_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Align Horizontally&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_14_RL">QUE_pool13418_14_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_14_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_14_RL">QUE_pool13418_14_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_14_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_14_RL">QUE_pool13418_14_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_14_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_14_RL">QUE_pool13418_14_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_14_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_14_RL">QUE_pool13418_14_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_14_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_14_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_14_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_14_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_15" title="HCI POOL 1 15">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you change the background color of the canvas in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_15_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_15_1">
+                <material>
+                  <mattext texttype="text/html">Right-click the canvas and select &amp;quot;Change Background Color.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_15_2">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Canvas Settings&amp;quot; option in the View menu.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_15_3">
+                <material>
+                  <mattext texttype="text/html">Select the canvas, then adjust the &amp;quot;Background&amp;quot; color in the right sidebar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_15_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Background Color&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_15_RL">QUE_pool13418_15_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_15_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_15_RL">QUE_pool13418_15_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_15_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_15_RL">QUE_pool13418_15_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_15_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_15_RL">QUE_pool13418_15_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_15_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_15_RL">QUE_pool13418_15_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_15_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_15_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_15_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_15_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_16" title="HCI POOL 1 16">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the frame tool in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_16_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_16_1">
+                <material>
+                  <mattext texttype="text/html">To add text to the design.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_16_2">
+                <material>
+                  <mattext texttype="text/html">To define a container for other design elements.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_16_3">
+                <material>
+                  <mattext texttype="text/html">To apply effects and filters to the design.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_16_4">
+                <material>
+                  <mattext texttype="text/html">To import images into the design.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_16_RL">QUE_pool13418_16_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_16_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_16_RL">QUE_pool13418_16_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_16_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_16_RL">QUE_pool13418_16_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_16_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_16_RL">QUE_pool13418_16_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_16_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_16_RL">QUE_pool13418_16_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_16_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_16_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_16_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_16_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_17" title="HCI POOL 1 17">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which option is used to select multiple layers at once in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_17_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_17_1">
+                <material>
+                  <mattext texttype="text/html">Shift + Click</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_17_2">
+                <material>
+                  <mattext texttype="text/html">Command + Click</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_17_3">
+                <material>
+                  <mattext texttype="text/html">Option + Click</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_17_4">
+                <material>
+                  <mattext texttype="text/html">Control + Click</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_17_RL">QUE_pool13418_17_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_17_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_17_RL">QUE_pool13418_17_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_17_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_17_RL">QUE_pool13418_17_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_17_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_17_RL">QUE_pool13418_17_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_17_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_17_RL">QUE_pool13418_17_1</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_17_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_17_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_17_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_17_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_18" title="HCI POOL 1 18">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you create a copy of a design element in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_18_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_18_1">
+                <material>
+                  <mattext texttype="text/html">Right-click and select &amp;quot;Duplicate.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_18_2">
+                <material>
+                  <mattext texttype="text/html">Press Command + D (Mac. or Control + D (Windows).</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_18_3">
+                <material>
+                  <mattext texttype="text/html">Drag and drop while holding the Option key (Mac. or Alt key (Windows).</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_18_4">
+                <material>
+                  <mattext texttype="text/html">Use the Copy/Paste commands in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_18_RL">QUE_pool13418_18_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_18_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_18_RL">QUE_pool13418_18_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_18_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_18_RL">QUE_pool13418_18_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_18_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_18_RL">QUE_pool13418_18_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_18_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_18_RL">QUE_pool13418_18_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_18_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_18_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_18_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_18_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_19" title="HCI POOL 1 19">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Auto Layout&amp;quot; feature in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_19_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_19_1">
+                <material>
+                  <mattext texttype="text/html">To automatically apply pre-designed layouts to the design.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_19_2">
+                <material>
+                  <mattext texttype="text/html">To generate responsive designs for different screen sizes.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_19_3">
+                <material>
+                  <mattext texttype="text/html">To create dynamic and flexible designs that adapt to content changes.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_19_4">
+                <material>
+                  <mattext texttype="text/html">To align elements with precision on the canvas.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_19_RL">QUE_pool13418_19_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_19_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_19_RL">QUE_pool13418_19_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_19_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_19_RL">QUE_pool13418_19_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_19_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_19_RL">QUE_pool13418_19_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_19_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_19_RL">QUE_pool13418_19_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_19_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_19_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_19_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_19_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_20" title="HCI POOL 1 20">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you undo your last action in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_20_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_20_1">
+                <material>
+                  <mattext texttype="text/html">Edit &amp;gt; Undo</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_20_2">
+                <material>
+                  <mattext texttype="text/html">Right-click and select &amp;quot;Undo.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_20_3">
+                <material>
+                  <mattext texttype="text/html">Cmd + Z (Mac. or Ctrl + Z (Windows)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_20_4">
+                <material>
+                  <mattext texttype="text/html">View &amp;gt; Undo History</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_20_RL">QUE_pool13418_20_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_20_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_20_RL">QUE_pool13418_20_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_20_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_20_RL">QUE_pool13418_20_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_20_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_20_RL">QUE_pool13418_20_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_20_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_20_RL">QUE_pool13418_20_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_20_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_20_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_20_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_20_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_21" title="HCI POOL 1 21">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you align multiple layers vertically in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_21_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_21_1">
+                <material>
+                  <mattext texttype="text/html">Use the Align panel and select the desired alignment option.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_21_2">
+                <material>
+                  <mattext texttype="text/html">Right-click the layers and choose &amp;quot;Align Vertically.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_21_3">
+                <material>
+                  <mattext texttype="text/html">Select the layers, then press Shift + V.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_21_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Align Vertically&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_21_RL">QUE_pool13418_21_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_21_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_21_RL">QUE_pool13418_21_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_21_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_21_RL">QUE_pool13418_21_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_21_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_21_RL">QUE_pool13418_21_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_21_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_21_RL">QUE_pool13418_21_4</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_21_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_21_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_21_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_21_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_22" title="HCI POOL 1 22">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Boolean Operations&amp;quot; feature in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_22_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_22_1">
+                <material>
+                  <mattext texttype="text/html">To create complex animations.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_22_2">
+                <material>
+                  <mattext texttype="text/html">To generate random patterns.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_22_3">
+                <material>
+                  <mattext texttype="text/html">To combine and manipulate shapes to create custom designs.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_22_4">
+                <material>
+                  <mattext texttype="text/html">To apply mathematical functions to design elements.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_22_RL">QUE_pool13418_22_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_22_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_22_RL">QUE_pool13418_22_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_22_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_22_RL">QUE_pool13418_22_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_22_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_22_RL">QUE_pool13418_22_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_22_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_22_RL">QUE_pool13418_22_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_22_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_22_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_22_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_22_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_23" title="HCI POOL 1 23">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you add a hyperlink to a design element in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_23_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_23_1">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Hyperlink&amp;quot; tool from the toolbar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_23_2">
+                <material>
+                  <mattext texttype="text/html">Select the element, go to the right sidebar, and add the hyperlink in the &amp;quot;Prototype&amp;quot; tab.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_23_3">
+                <material>
+                  <mattext texttype="text/html">Right-click the element and choose &amp;quot;Add Hyperlink.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_23_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Insert Hyperlink&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_23_RL">QUE_pool13418_23_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_23_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_23_RL">QUE_pool13418_23_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_23_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_23_RL">QUE_pool13418_23_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_23_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_23_RL">QUE_pool13418_23_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_23_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_23_RL">QUE_pool13418_23_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_23_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_23_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_23_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_23_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_24" title="HCI POOL 1 24">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Boolean Operations&amp;quot; feature in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_24_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_24_1">
+                <material>
+                  <mattext texttype="text/html">To create complex animations.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_24_2">
+                <material>
+                  <mattext texttype="text/html">To generate random patterns.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_24_3">
+                <material>
+                  <mattext texttype="text/html">To combine and manipulate shapes to create custom designs.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_24_4">
+                <material>
+                  <mattext texttype="text/html">To apply mathematical functions to design elements.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_24_RL">QUE_pool13418_24_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_24_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_24_RL">QUE_pool13418_24_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_24_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_24_RL">QUE_pool13418_24_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_24_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_24_RL">QUE_pool13418_24_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_24_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_24_RL">QUE_pool13418_24_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_24_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_24_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_24_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_24_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_25" title="HCI POOL 1 25">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you lock a layer in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_25_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_25_1">
+                <material>
+                  <mattext texttype="text/html">Right-click the layer and choose &amp;quot;Lock.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_25_2">
+                <material>
+                  <mattext texttype="text/html">Select the layer, go to the right sidebar, and toggle the lock icon.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_25_3">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Lock&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_25_4">
+                <material>
+                  <mattext texttype="text/html">Press Command + L (Mac. or Control + L (Windows).</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_25_RL">QUE_pool13418_25_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_25_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_25_RL">QUE_pool13418_25_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_25_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_25_RL">QUE_pool13418_25_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_25_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_25_RL">QUE_pool13418_25_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_25_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_25_RL">QUE_pool13418_25_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_25_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_25_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_25_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_25_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_26" title="HCI POOL 1 26">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Components&amp;quot; panel in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_26_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_26_1">
+                <material>
+                  <mattext texttype="text/html">To access pre-designed UI kits and templates.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_26_2">
+                <material>
+                  <mattext texttype="text/html">To manage and organize design assets in the project.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_26_3">
+                <material>
+                  <mattext texttype="text/html">To create reusable design elements that can be easily updated across the project.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_26_4">
+                <material>
+                  <mattext texttype="text/html">To generate code snippets for developers.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_26_RL">QUE_pool13418_26_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_26_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_26_RL">QUE_pool13418_26_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_26_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_26_RL">QUE_pool13418_26_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_26_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_26_RL">QUE_pool13418_26_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_26_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_26_RL">QUE_pool13418_26_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_26_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_26_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_26_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_26_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_27" title="HCI POOL 1 27">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you create a text style in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_27_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_27_1">
+                <material>
+                  <mattext texttype="text/html">Right-click a text layer and select &amp;quot;Create Text Style.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_27_2">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Text Style&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_27_3">
+                <material>
+                  <mattext texttype="text/html">Select a text layer, then click the &amp;quot;+&amp;quot; button next to the &amp;quot;Text Styles&amp;quot; section in the right sidebar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_27_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Create Style&amp;quot; command in the Layers panel.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_27_RL">QUE_pool13418_27_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_27_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_27_RL">QUE_pool13418_27_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_27_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_27_RL">QUE_pool13418_27_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_27_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_27_RL">QUE_pool13418_27_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_27_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_27_RL">QUE_pool13418_27_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_27_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_27_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_27_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_27_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_28" title="HCI POOL 1 28">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Prototype&amp;quot; mode in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_28_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_28_1">
+                <material>
+                  <mattext texttype="text/html">To switch between design and prototype views.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_28_2">
+                <material>
+                  <mattext texttype="text/html">To create interactive and clickable prototypes for user testing and feedback.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_28_3">
+                <material>
+                  <mattext texttype="text/html">To collaborate with team members on the design project.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_28_4">
+                <material>
+                  <mattext texttype="text/html">To present the design to stakeholders in a slideshow format.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_28_RL">QUE_pool13418_28_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_28_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_28_RL">QUE_pool13418_28_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_28_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_28_RL">QUE_pool13418_28_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_28_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_28_RL">QUE_pool13418_28_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_28_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_28_RL">QUE_pool13418_28_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_28_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_28_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_28_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_28_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_29" title="HCI POOL 1 29">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you adjust the letter spacing (tracking) of a text layer in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_29_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_29_1">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Letter Spacing&amp;quot; slider in the Text panel.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_29_2">
+                <material>
+                  <mattext texttype="text/html">Select the text layer and adjust the &amp;quot;Letter Spacing&amp;quot; value in the right sidebar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_29_3">
+                <material>
+                  <mattext texttype="text/html">Right-click the text layer and choose &amp;quot;Adjust Letter Spacing.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_29_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Tracking&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_29_RL">QUE_pool13418_29_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_29_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_29_RL">QUE_pool13418_29_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_29_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_29_RL">QUE_pool13418_29_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_29_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_29_RL">QUE_pool13418_29_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_29_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_29_RL">QUE_pool13418_29_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_29_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_29_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_29_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_29_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_30" title="HCI POOL 1 30">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you apply a drop shadow effect to a layer in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_30_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_30_1">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Drop Shadow&amp;quot; tool from the toolbar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_30_2">
+                <material>
+                  <mattext texttype="text/html">Select the layer and adjust the &amp;quot;Drop Shadow&amp;quot; settings in the right sidebar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_30_3">
+                <material>
+                  <mattext texttype="text/html">Right-click the layer and choose &amp;quot;Apply Drop Shadow.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_30_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Add Effects&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_30_RL">QUE_pool13418_30_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_30_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_30_RL">QUE_pool13418_30_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_30_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_30_RL">QUE_pool13418_30_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_30_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_30_RL">QUE_pool13418_30_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_30_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_30_RL">QUE_pool13418_30_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_30_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_30_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_30_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_30_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_31" title="HCI POOL 1 31">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Constraints&amp;quot; feature in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_31_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_31_1">
+                <material>
+                  <mattext texttype="text/html">To apply visual effects to design elements.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_31_2">
+                <material>
+                  <mattext texttype="text/html">To control the stacking order of layers.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_31_3">
+                <material>
+                  <mattext texttype="text/html">To group and organize design elements.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_31_4">
+                <material>
+                  <mattext texttype="text/html">To define how a layer behaves when its parent container is resized.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_31_RL">QUE_pool13418_31_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_31_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_31_RL">QUE_pool13418_31_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_31_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_31_RL">QUE_pool13418_31_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_31_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_31_RL">QUE_pool13418_31_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_31_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_31_RL">QUE_pool13418_31_4</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_31_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_31_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_31_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_31_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_32" title="HCI POOL 1 32">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Which option allows you to apply a gradient fill to a shape in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_32_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_32_1">
+                <material>
+                  <mattext texttype="text/html">The Paint Bucket tool</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_32_2">
+                <material>
+                  <mattext texttype="text/html">The Stroke panel</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_32_3">
+                <material>
+                  <mattext texttype="text/html">The Fill panel</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_32_4">
+                <material>
+                  <mattext texttype="text/html">The Layer Styles panel</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_32_RL">QUE_pool13418_32_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_32_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_32_RL">QUE_pool13418_32_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_32_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_32_RL">QUE_pool13418_32_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_32_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_32_RL">QUE_pool13418_32_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_32_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_32_RL">QUE_pool13418_32_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_32_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_32_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_32_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_32_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_33" title="HCI POOL 1 33">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you create a component in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_33_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_33_1">
+                <material>
+                  <mattext texttype="text/html">Select the design element(s), right-click, and choose &amp;quot;Create Component.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_33_2">
+                <material>
+                  <mattext texttype="text/html">Press Command + G (Mac. or Control + G (Windows).</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_33_3">
+                <material>
+                  <mattext texttype="text/html">Drag and drop the design element(s) into the Components panel.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_33_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Convert to Component&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_33_RL">QUE_pool13418_33_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_33_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_33_RL">QUE_pool13418_33_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_33_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_33_RL">QUE_pool13418_33_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_33_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_33_RL">QUE_pool13418_33_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_33_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_33_RL">QUE_pool13418_33_1</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_33_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_33_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_33_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_33_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_34" title="HCI POOL 1 34">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Vector Networks&amp;quot; feature in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_34_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_34_1">
+                <material>
+                  <mattext texttype="text/html">To create realistic 3D shapes in the design.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_34_2">
+                <material>
+                  <mattext texttype="text/html">To apply complex transformations to design elements.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_34_3">
+                <material>
+                  <mattext texttype="text/html">To draw and edit vector paths with more flexibility and precision.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_34_4">
+                <material>
+                  <mattext texttype="text/html">To import and export vector graphics from other applications.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_34_RL">QUE_pool13418_34_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_34_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_34_RL">QUE_pool13418_34_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_34_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_34_RL">QUE_pool13418_34_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_34_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_34_RL">QUE_pool13418_34_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_34_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_34_RL">QUE_pool13418_34_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_34_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_34_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_34_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_34_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_35" title="HCI POOL 1 35">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you add a border to a shape in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_35_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_35_1">
+                <material>
+                  <mattext texttype="text/html">Right-click the shape and select &amp;quot;Add Border.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_35_2">
+                <material>
+                  <mattext texttype="text/html">Use the Stroke panel and adjust the stroke settings.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_35_3">
+                <material>
+                  <mattext texttype="text/html">Select the shape and click the &amp;quot;+&amp;quot; button next to the &amp;quot;Fills&amp;quot; section in the right sidebar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_35_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Borders&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_35_RL">QUE_pool13418_35_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_35_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_35_RL">QUE_pool13418_35_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_35_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_35_RL">QUE_pool13418_35_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_35_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_35_RL">QUE_pool13418_35_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_35_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_35_RL">QUE_pool13418_35_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_35_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_35_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_35_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_35_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_36" title="HCI POOL 1 36">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you create a color style in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_36_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_36_1">
+                <material>
+                  <mattext texttype="text/html">Select a shape or text layer with the desired color, go to the right sidebar, and click the &amp;quot;+&amp;quot; button next to the &amp;quot;Colors&amp;quot; section.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_36_2">
+                <material>
+                  <mattext texttype="text/html">Right-click the layer and choose &amp;quot;Create Color Style.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_36_3">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Color Styles&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_36_4">
+                <material>
+                  <mattext texttype="text/html">Press Command + Option + C (Mac. or Control + Alt + C (Windows).</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_36_RL">QUE_pool13418_36_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_36_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_36_RL">QUE_pool13418_36_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_36_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_36_RL">QUE_pool13418_36_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_36_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_36_RL">QUE_pool13418_36_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_36_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_36_RL">QUE_pool13418_36_1</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_36_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_36_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_36_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_36_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_37" title="HCI POOL 1 37">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Team Libraries&amp;quot; feature in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_37_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_37_1">
+                <material>
+                  <mattext texttype="text/html">To manage design assets locally on a team&apos;s computers.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_37_2">
+                <material>
+                  <mattext texttype="text/html">To create a centralized library of design components and styles for the team to share.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_37_3">
+                <material>
+                  <mattext texttype="text/html">To export design assets for use in other applications.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_37_4">
+                <material>
+                  <mattext texttype="text/html">To collaborate with team members on design projects.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_37_RL">QUE_pool13418_37_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_37_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_37_RL">QUE_pool13418_37_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_37_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_37_RL">QUE_pool13418_37_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_37_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_37_RL">QUE_pool13418_37_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_37_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_37_RL">QUE_pool13418_37_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_37_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_37_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_37_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_37_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_38" title="HCI POOL 1 38">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you create a dashed border for a shape in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_38_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_38_1">
+                <material>
+                  <mattext texttype="text/html">Right-click the shape and choose &amp;quot;Add Dashed Border.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_38_2">
+                <material>
+                  <mattext texttype="text/html">Use the Stroke panel and adjust the stroke settings.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_38_3">
+                <material>
+                  <mattext texttype="text/html">Select the shape, go to the right sidebar, and toggle the dashed border option.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_38_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Dashed Border&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_38_RL">QUE_pool13418_38_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_38_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_38_RL">QUE_pool13418_38_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_38_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_38_RL">QUE_pool13418_38_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_38_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_38_RL">QUE_pool13418_38_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_38_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_38_RL">QUE_pool13418_38_4</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_38_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_38_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_38_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_38_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_39" title="HCI POOL 1 39">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Version History&amp;quot; feature in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_39_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_39_1">
+                <material>
+                  <mattext texttype="text/html">To revert to a previous version of the design.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_39_2">
+                <material>
+                  <mattext texttype="text/html">To view and restore previous versions of the design.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_39_3">
+                <material>
+                  <mattext texttype="text/html">To track and manage design iterations and changes.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_39_4">
+                <material>
+                  <mattext texttype="text/html">To collaborate with team members on design revisions.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_39_RL">QUE_pool13418_39_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_39_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_39_RL">QUE_pool13418_39_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_39_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_39_RL">QUE_pool13418_39_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_39_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_39_RL">QUE_pool13418_39_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_39_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_39_RL">QUE_pool13418_39_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_39_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_39_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_39_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_39_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_40" title="HCI POOL 1 40">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you import images into Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_40_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_40_1">
+                <material>
+                  <mattext texttype="text/html">Right-click the canvas and choose &amp;quot;Import Image.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_40_2">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Import&amp;quot; option in the File menu.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_40_3">
+                <material>
+                  <mattext texttype="text/html">Drag and drop images onto the canvas or the Layers panel.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_40_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Insert Image&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_40_RL">QUE_pool13418_40_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_40_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_40_RL">QUE_pool13418_40_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_40_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_40_RL">QUE_pool13418_40_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_40_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_40_RL">QUE_pool13418_40_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_40_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_40_RL">QUE_pool13418_40_3</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_40_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_40_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_40_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_40_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_41" title="HCI POOL 1 41">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Library&amp;quot; feature in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_41_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_41_1">
+                <material>
+                  <mattext texttype="text/html">To manage and organize design files within a project.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_41_2">
+                <material>
+                  <mattext texttype="text/html">To create a centralized repository of design components and styles for reuse across multiple projects.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_41_3">
+                <material>
+                  <mattext texttype="text/html">To collaborate with team members on specific design files.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_41_4">
+                <material>
+                  <mattext texttype="text/html">To publish the design to a public library for others to access.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_41_RL">QUE_pool13418_41_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_41_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_41_RL">QUE_pool13418_41_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_41_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_41_RL">QUE_pool13418_41_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_41_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_41_RL">QUE_pool13418_41_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_41_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_41_RL">QUE_pool13418_41_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_41_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_41_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_41_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_41_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_42" title="HCI POOL 1 42">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you create a custom shape in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_42_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_42_1">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Custom Shape&amp;quot; tool from the toolbar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_42_2">
+                <material>
+                  <mattext texttype="text/html">Combine basic shapes using boolean operations like union, subtract, intersect, or exclude.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_42_3">
+                <material>
+                  <mattext texttype="text/html">Right-click the canvas and choose &amp;quot;Create Custom Shape.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_42_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Custom Shape&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_42_RL">QUE_pool13418_42_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_42_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_42_RL">QUE_pool13418_42_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_42_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_42_RL">QUE_pool13418_42_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_42_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_42_RL">QUE_pool13418_42_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_42_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_42_RL">QUE_pool13418_42_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_42_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_42_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_42_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_42_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_43" title="HCI POOL 1 43">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the purpose of the &amp;quot;Team Library&amp;quot; in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_43_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_43_1">
+                <material>
+                  <mattext texttype="text/html">To store design files accessible to the entire team.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_43_2">
+                <material>
+                  <mattext texttype="text/html">To create a shared library of design assets that can be used by team members.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_43_3">
+                <material>
+                  <mattext texttype="text/html">To collaborate with team members on specific design files.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_43_4">
+                <material>
+                  <mattext texttype="text/html">To manage user permissions within a design project.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_43_RL">QUE_pool13418_43_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_43_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_43_RL">QUE_pool13418_43_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_43_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_43_RL">QUE_pool13418_43_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_43_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_43_RL">QUE_pool13418_43_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_43_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_43_RL">QUE_pool13418_43_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_43_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_43_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_43_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_43_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_44" title="HCI POOL 1 44">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you adjust the line height of a text layer in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_44_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_44_1">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Line Height&amp;quot; slider in the Text panel.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_44_2">
+                <material>
+                  <mattext texttype="text/html">Select the text layer and adjust the &amp;quot;Line Height&amp;quot; value in the right sidebar.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_44_3">
+                <material>
+                  <mattext texttype="text/html">Right-click the text layer and choose &amp;quot;Adjust Line Height.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_44_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Line Height&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_44_RL">QUE_pool13418_44_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_44_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_44_RL">QUE_pool13418_44_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_44_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_44_RL">QUE_pool13418_44_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_44_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_44_RL">QUE_pool13418_44_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_44_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_44_RL">QUE_pool13418_44_2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_44_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_44_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_44_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_44_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+      <item ident="QUE_pool13418_45" title="HCI POOL 1 45">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How can you create a nested component in Figma?</mattext>
+          </material>
+          <response_lid ident="QUE_pool13418_45_RL" rcardinality="Single">
+            <render_choice>
+              <response_label ident="QUE_pool13418_45_1">
+                <material>
+                  <mattext texttype="text/html">Select the layers you want to include in the component, right-click, and choose &amp;quot;Create Component.&amp;quot;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_45_2">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Nested Component&amp;quot; option in the Edit menu.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_45_3">
+                <material>
+                  <mattext texttype="text/html">Drag and drop the layers onto an existing component while holding the Option (Mac. or Alt (Windows) key.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="QUE_pool13418_45_4">
+                <material>
+                  <mattext texttype="text/html">Use the &amp;quot;Create Nested Component&amp;quot; tool from the toolbar.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="1.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_45_RL">QUE_pool13418_45_1</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_45_1_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_45_RL">QUE_pool13418_45_2</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_45_2_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_45_RL">QUE_pool13418_45_3</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_45_3_fb" />
+          </respcondition>
+          <respcondition continue="Yes">
+              <conditionvar>
+                <varequal respident="QUE_pool13418_45_RL">QUE_pool13418_45_4</varequal>
+              </conditionvar>
+              <displayfeedback feedbacktype="Response" linkrefid="QUE_pool13418_45_4_fb" />
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal case="Yes" respident="QUE_pool13418_45_RL">QUE_pool13418_45_1</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="QUE_pool13418_45_1_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_45_2_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_45_3_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+        <itemfeedback ident="QUE_pool13418_45_4_fb">
+          <material>
+            <mattext texttype="text/html"></mattext>
+          </material>
+        </itemfeedback>
+      </item>
+  </objectbank>
+</questestinterop>
