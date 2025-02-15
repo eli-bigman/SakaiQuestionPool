@@ -1,8 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions }) => {
   const [userAnswer, setUserAnswer] = useState("")
   const [showAnswer, setShowAnswer] = useState(false)
+
+  // Reset state when a new question is loaded
+  useEffect(() => {
+    setUserAnswer("")
+    setShowAnswer(false)
+  }, [question])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -25,6 +31,7 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
                 name="answer" 
                 value={option.ident} 
                 onChange={handleChange}
+                checked={userAnswer === option.ident}
                 disabled={showAnswer}
               />
               {option.text}
@@ -55,25 +62,43 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
     }
   }
 
-  const renderCorrectAnswer = () => {
+  const renderResult = () => {
     if (question.type === 'essay') {
       return <div>No model answer for essay questions.</div>
     }
-    return <div><strong>Correct Answer:</strong> {question.correctAnswer}</div>
+    if (!showAnswer) return null
+
+    // For multiple choice and true/false, map the correct answer ident to its text.
+    if (question.type === 'multiple_choice' || question.type === 'true_false') {
+      const correctOption = question.options.find(opt => opt.ident === question.correctAnswer)
+      const correctText = correctOption ? correctOption.text : question.correctAnswer
+      if (userAnswer === question.correctAnswer) {
+        return <div>Correct ✅</div>
+      } else {
+        return <div>Incorrect ❌. The correct answer is: {correctText}</div>
+      }
+    }
+    // For fill in the blank, compare the text (ignoring case)
+    else if (question.type === 'fill_in') {
+      if (userAnswer.trim().toLowerCase() === question.correctAnswer.trim().toLowerCase()) {
+        return <div>Correct ✅</div>
+      } else {
+        return <div>Incorrect ❌. The correct answer is: {question.correctAnswer}</div>
+      }
+    }
   }
 
   return (
     <div className="question-container">
       <h2>Question {questionNumber} of {totalQuestions}</h2>
       <div className="question-prompt">
-        {/* using dangerouslySetInnerHTML in case the XML contains HTML formatting */}
         <div dangerouslySetInnerHTML={{ __html: question.prompt }} />
       </div>
       <form onSubmit={handleSubmit}>
         {renderInput()}
         {!showAnswer && <button type="submit">Submit Answer</button>}
       </form>
-      {showAnswer && renderCorrectAnswer()}
+      {renderResult()}
       {showAnswer && <button onClick={onNext}>Next Question</button>}
     </div>
   )

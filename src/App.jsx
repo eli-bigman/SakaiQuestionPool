@@ -11,7 +11,7 @@ function App() {
   const handleFileSelect = async (fileName) => {
     setSelectedFile(fileName)
     try {
-      // fetch the XML file from the public folder
+      // Updated path reflecting the xml_files directory
       const response = await fetch(`/xml_files/${fileName}`)
       const xmlText = await response.text()
       const parsedQuestions = parseXML(xmlText)
@@ -20,7 +20,7 @@ function App() {
     } catch (error) {
       console.error('Error fetching XML file:', error)
     }
-  }
+  }  
 
   const handleNextQuestion = () => {
     setCurrentQuestionIndex((prev) => prev + 1)
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Practice Questions</h1>
+      <h1>Sakai Question Pool</h1>
       <QuestionSelector onSelect={handleFileSelect} />
       {questions.length > 0 && currentQuestionIndex < questions.length ? (
         <QuestionComponent 

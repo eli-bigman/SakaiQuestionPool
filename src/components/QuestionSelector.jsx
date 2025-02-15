@@ -1,4 +1,3 @@
-// QuestionSelector.jsx
 import React, { useEffect, useState } from 'react'
 
 const QuestionSelector = ({ onSelect }) => {

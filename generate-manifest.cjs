@@ -1,4 +1,4 @@
-// generate-manifest.js
+// generate-manifest.cjs
 const fs = require('fs')
 const path = require('path')
 
@@ -12,7 +12,7 @@ fs.readdir(xmlDir, (err, files) => {
     process.exit(1)
   }
 
-  // Filter for only .xml files (you can adjust this filter if needed)
+  // Filter for only .xml files (adjust filter if needed)
   const xmlFiles = files.filter((file) => path.extname(file).toLowerCase() === '.xml')
 
   // Define the path for the manifest file
