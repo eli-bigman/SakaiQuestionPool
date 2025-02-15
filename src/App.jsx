@@ -1,34 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react'
+import QuestionSelector from './components/QuestionSelector'
+import QuestionComponent from './components/QuestionComponent'
+import parseXML from './utils/parseXML'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [questions, setQuestions] = useState([])
+  const [selectedFile, setSelectedFile] = useState(null)
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
+
+  const handleFileSelect = async (fileName) => {
+    setSelectedFile(fileName)
+    try {
+      // fetch the XML file from the public folder
+      const response = await fetch(`/xml_files/${fileName}`)
+      const xmlText = await response.text()
+      const parsedQuestions = parseXML(xmlText)
+      setQuestions(parsedQuestions)
+      setCurrentQuestionIndex(0)
+    } catch (error) {
+      console.error('Error fetching XML file:', error)
+    }
+  }
+
+  const handleNextQuestion = () => {
+    setCurrentQuestionIndex((prev) => prev + 1)
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+      <h1>Practice Questions</h1>
+      <QuestionSelector onSelect={handleFileSelect} />
+      {questions.length > 0 && currentQuestionIndex < questions.length ? (
+        <QuestionComponent 
+          question={questions[currentQuestionIndex]}
+          onNext={handleNextQuestion}
+          questionNumber={currentQuestionIndex + 1}
+          totalQuestions={questions.length}
+        />
+      ) : selectedFile ? (
+        <div>No more questions.</div>
+      ) : (
+        <div>Please select a question pool.</div>
+      )}
+    </div>
   )
 }
 
