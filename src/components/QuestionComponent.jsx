@@ -1,57 +1,67 @@
-// src/components/QuestionComponent.jsx
-import React, { useState, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions, direction }) => {
-  const [userAnswer, setUserAnswer] = useState("")
-  const [shake, setShake] = useState(false)
-  const [animationClass, setAnimationClass] = useState("")
-  const [autoAdvanced, setAutoAdvanced] = useState(false)
-  const [autoProceedEnabled, setAutoProceedEnabled] = useState(false) // default off
+  const [userAnswer, setUserAnswer] = useState(
+    localStorage.getItem('userAnswers') 
+      ? JSON.parse(localStorage.getItem('userAnswers'))[question.ident] 
+      : ""
+  );
+  const [shake, setShake] = useState(false);
+  const [animationClass, setAnimationClass] = useState("");
+  const [autoProceedEnabled, setAutoProceedEnabled] = useState(
+    JSON.parse(localStorage.getItem('autoProceedEnabled')) || false
+  );
+  
+  const autoAdvancedRef = useRef(false); // UseEef to track auto-advance state
 
-  // Reset state when a new question is loaded
   useEffect(() => {
-    setUserAnswer("")
-    setShake(false)
-    setAutoAdvanced(false)
-    // Set slide-in animation based on direction
-    if (direction === "prev") {
-      setAnimationClass("slide-in-left")
-    } else {
-      setAnimationClass("slide-in-right")
-    }
-    const timeout = setTimeout(() => setAnimationClass(""), 500)
-    return () => clearTimeout(timeout)
-  }, [question, direction])
+    setShake(false);
+    autoAdvancedRef.current = false; // Reset when question changes
 
-  // Checks if the given answer is correct for non-essay questions
+    if (direction === "prev") {
+      setAnimationClass("slide-in-left");
+    } else {
+      setAnimationClass("slide-in-right");
+    }
+
+    const timeout = setTimeout(() => setAnimationClass(""), 500);
+    return () => clearTimeout(timeout);
+  }, [question, direction]);
+
   const isAnswerCorrect = (value) => {
     if (question.type === 'fill_in') {
-      return value.trim().toLowerCase() === question.correctAnswer.trim().toLowerCase()
+      return value.trim().toLowerCase() === question.correctAnswer.trim().toLowerCase();
     } else if (question.type === 'multiple_choice' || question.type === 'true_false') {
-      return value === question.correctAnswer
-    } else {
-      return false
+      return value === question.correctAnswer;
     }
-  }
+    return false;
+  };
 
-  // When the user changes the input, update the answer and auto-advance if conditions are met
   const handleChange = (e) => {
-    const value = e.target.value
-    setUserAnswer(value)
-    // Auto-advance only for non-essay questions and if auto-proceed is enabled
+    const value = e.target.value;
+    setUserAnswer(value);
+
+    const storedAnswers = JSON.parse(localStorage.getItem('userAnswers')) || {};
+    storedAnswers[question.ident] = value;
+    localStorage.setItem('userAnswers', JSON.stringify(storedAnswers));
+
     if (
       autoProceedEnabled &&
-      !autoAdvanced &&
+      !autoAdvancedRef.current &&
       question.type !== 'essay' &&
       isAnswerCorrect(value)
     ) {
-      setAutoAdvanced(true)
-      setAnimationClass(direction === "prev" ? "slide-out-right" : "slide-out-left")
+      autoAdvancedRef.current = true; // Set to true to prevent multiple triggers
+
+      setAnimationClass(direction === "prev" ? "slide-out-right" : "slide-out-left");
+
       setTimeout(() => {
-        onNext()
-      }, 700)
+        onNext();
+        autoAdvancedRef.current = false; // Reset for the next question
+      }, 700);
     }
-  }
+  };
+  
 
   // For essay questions or manual submission when auto-proceed is disabled
   const handleSubmit = (e) => {
@@ -164,14 +174,18 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions, d
             <input 
               type="checkbox"
               checked={autoProceedEnabled}
-              onChange={() => setAutoProceedEnabled(!autoProceedEnabled)}
+              onChange={() => { 
+                const newValue = !autoProceedEnabled;
+                setAutoProceedEnabled(newValue);
+                localStorage.setItem('autoProceedEnabled', JSON.stringify(newValue));
+              }}
               style={{ transform: 'scale(0.7)' }}
             />
           </div>
         )}
       </div>
       <div className="question-prompt" style={{ marginBottom: '20px', textAlign: 'center' }}>
-        <div dangerouslySetInnerHTML={{ __html: question.prompt }} />
+        <div style={{fontWeight:'bold', fontSize:'18px'}} dangerouslySetInnerHTML={{ __html: question.prompt }} />
       </div>
       <form onSubmit={handleSubmit}>
         {renderInput()}
@@ -198,4 +212,4 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions, d
   )
 }
 
-export default QuestionComponent
+export default QuestionComponent;

@@ -79,6 +79,8 @@ const parseXML = (xmlString) => {
   
       questions.push({
         id: ident,
+        qNumber: (i + 1).toString(),
+        maxQ: items.length.toString(),
         title,
         type,
         prompt,
