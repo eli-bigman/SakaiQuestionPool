@@ -6,10 +6,19 @@ import parseXML from './utils/parseXML';
 
 
 function App() {
-  const [questions, setQuestions] = useState([]);
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [darkMode, setDarkMode] = useState(false);
+  const [questions, setQuestions] = useState(() => {
+    return JSON.parse(localStorage.getItem('questions')) || []
+  })
+  const [selectedFile, setSelectedFile] = useState(() => localStorage.getItem('selectedFile') || null)
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(() => {
+    return parseInt(localStorage.getItem('currentQuestionIndex'), 10) || 0
+  })
+  const [userAnswers, setUserAnswers] = useState(() => {
+    return JSON.parse(localStorage.getItem('userAnswers')) || {}
+  })
+  const [darkMode, setDarkMode] = useState(() => {
+    return JSON.parse(localStorage.getItem('darkMode')) || false
+  })
   const [direction, setDirection] = useState("next");
 
   useEffect(() => {
@@ -18,16 +27,40 @@ function App() {
     } else {
       document.body.classList.remove("dark-mode");
     }
+    localStorage.setItem('darkMode', JSON.stringify(darkMode));
   }, [darkMode]);
+
+  useEffect(() => {
+    if (!selectedFile) return
+
+    const storedQuestions = JSON.parse(localStorage.getItem('questions'))
+    if (storedQuestions && storedQuestions.length > 0) {
+      // Load questions from localStorage instead of re-fetching
+      setQuestions(storedQuestions)
+    } else {
+      // If no cached questions, fetch from XML
+      handleFileSelect(selectedFile)
+    }
+  }, [selectedFile])
 
   const handleFileSelect = async (fileName) => {
     setSelectedFile(fileName);
+    localStorage.setItem('selectedFile', fileName)
     try {
       const response = await fetch(`/xml_files/${fileName}`);
       const xmlText = await response.text();
       const parsedQuestions = parseXML(xmlText);
       setQuestions(parsedQuestions);
-      setCurrentQuestionIndex(0);
+
+      // Store in localStorage for persistence
+      localStorage.setItem('questions', JSON.stringify(parsedQuestions))
+
+      // Reset progress only if loading a new file
+      setCurrentQuestionIndex(0)
+      setUserAnswers({})
+      localStorage.setItem('currentQuestionIndex', 0)
+      localStorage.setItem('userAnswers', JSON.stringify({}))
+
     } catch (error) {
       console.error("Error fetching XML file:", error);
     }
@@ -37,6 +70,7 @@ function App() {
     if (currentQuestionIndex < questions.length - 1) {
       setDirection("next");
       setCurrentQuestionIndex(prev => prev + 1);
+      localStorage.setItem('currentQuestionIndex', currentQuestionIndex + 1)
     }
   };
 
@@ -44,8 +78,10 @@ function App() {
     if (currentQuestionIndex > 0) {
       setDirection("prev");
       setCurrentQuestionIndex(prev => prev - 1);
+      localStorage.setItem('currentQuestionIndex', currentQuestionIndex - 1)
     }
   };
+  
 
   return (
     <div className="app-container">
