@@ -1,3 +1,4 @@
+// src/App.jsx
 import React, { useState, useEffect } from 'react'
 import QuestionSelector from './components/QuestionSelector'
 import QuestionComponent from './components/QuestionComponent'
@@ -9,7 +10,6 @@ function App() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [darkMode, setDarkMode] = useState(false)
 
-  // Toggle dark mode by adding/removing a class on the body element
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add('dark-mode')
@@ -21,7 +21,6 @@ function App() {
   const handleFileSelect = async (fileName) => {
     setSelectedFile(fileName)
     try {
-      // Updated path reflecting the xml_files directory
       const response = await fetch(`/xml_files/${fileName}`)
       const xmlText = await response.text()
       const parsedQuestions = parseXML(xmlText)
@@ -33,7 +32,15 @@ function App() {
   }
 
   const handleNextQuestion = () => {
-    setCurrentQuestionIndex((prev) => prev + 1)
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex(prev => prev + 1)
+    }
+  }
+
+  const handlePrevQuestion = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(prev => prev - 1)
+    }
   }
 
   return (
@@ -53,7 +60,6 @@ function App() {
             <label className="switch">
               <input 
                 type="checkbox" 
-                id="toggleDarkMode" 
                 checked={darkMode} 
                 onChange={() => setDarkMode(!darkMode)}
               />
@@ -62,13 +68,29 @@ function App() {
           </div>
         </header>
         <QuestionSelector onSelect={handleFileSelect} />
-        {questions.length > 0 && currentQuestionIndex < questions.length ? (
-          <QuestionComponent 
-            question={questions[currentQuestionIndex]}
-            onNext={handleNextQuestion}
-            questionNumber={currentQuestionIndex + 1}
-            totalQuestions={questions.length}
-          />
+        {questions.length > 0 ? (
+          <>
+            <QuestionComponent 
+              question={questions[currentQuestionIndex]}
+              onNext={handleNextQuestion}
+            />
+            <div className="navigator-container">
+              <button 
+                className="navigator-btn" 
+                onClick={handlePrevQuestion} 
+                disabled={currentQuestionIndex === 0}
+              >
+                Previous
+              </button>
+              <button 
+                className="navigator-btn" 
+                onClick={handleNextQuestion} 
+                disabled={currentQuestionIndex === questions.length - 1}
+              >
+                Next
+              </button>
+            </div>
+          </>
         ) : selectedFile ? (
           <div>Please select another question pool or check back later.</div>
         ) : (

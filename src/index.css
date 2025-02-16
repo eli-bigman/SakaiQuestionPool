@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
-  overflow-x: hidden; /* Removes horizontal scroll */
+  overflow-x: hidden;
 }
-
-/* Optionally hide the scrollbar for WebKit browsers */
-body::-webkit-scrollbar {
-  display: none;
-} 
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -24,7 +19,7 @@ body {
   min-height: 100vh;
 }
 
-/* New content container to center everything */
+/* Content container centers the main content */
 .content {
   flex: 1;
   display: flex;
@@ -75,6 +70,19 @@ body {
     transform: translateX(-100%);
     opacity: 0;
   }
+}
+
+/* Shake animation for incorrect answers */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s;
 }
 
 /* Styling for the custom question selector */
@@ -128,6 +136,43 @@ body {
 
 .dropdown-item:hover {
   background: #f0f2f5;
+}
+
+/* Navigator Buttons Container */
+.navigator-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Navigator Buttons */
+.navigator-btn {
+  background-color: #47973d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.navigator-btn:hover:enabled {
+  background-color: #337ab7;
+}
+
+.navigator-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Mobile: Stack navigator buttons */
+@media (max-width: 600px) {
+  .navigator-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /* Footer styles */

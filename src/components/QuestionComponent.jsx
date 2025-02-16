@@ -1,36 +1,49 @@
+// src/components/QuestionComponent.jsx
 import React, { useState, useEffect } from 'react'
 
-const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions }) => {
+const QuestionComponent = ({ question, onNext }) => {
   const [userAnswer, setUserAnswer] = useState("")
-  const [showAnswer, setShowAnswer] = useState(false)
+  const [shake, setShake] = useState(false)
   const [animationClass, setAnimationClass] = useState("")
 
-  // Reset state and trigger a slide-in animation when a new question is loaded
+  // Reset state when a new question is loaded
   useEffect(() => {
     setUserAnswer("")
-    setShowAnswer(false)
+    setShake(false)
     setAnimationClass("slide-in")
-    const timeout = setTimeout(() => {
-      setAnimationClass("")
-    }, 500)
+    const timeout = setTimeout(() => setAnimationClass(""), 500)
     return () => clearTimeout(timeout)
   }, [question])
 
+  // Helper to check answer correctness
+  const isCorrect = () => {
+    if (question.type === 'fill_in') {
+      return userAnswer.trim().toLowerCase() === question.correctAnswer.trim().toLowerCase()
+    } else if (question.type === 'multiple_choice' || question.type === 'true_false') {
+      return userAnswer === question.correctAnswer
+    } else {
+      // For essay, we do not validate automatically.
+      return false
+    }
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    setShowAnswer(true)
+    if (isCorrect()) {
+      // If answer is correct, auto move to next after a short delay.
+      setAnimationClass("slide-out")
+      setTimeout(() => {
+        onNext()
+      }, 700)
+    } else {
+      // If answer is wrong, trigger shake animation.
+      setShake(true)
+      setTimeout(() => setShake(false), 500)
+    }
   }
 
   const handleChange = (e) => {
     setUserAnswer(e.target.value)
-  }
-
-  // On Next, trigger a slide-out animation then call onNext after 500ms
-  const handleNextClick = () => {
-    setAnimationClass("slide-out")
-    setTimeout(() => {
-      onNext()
-    }, 500)
   }
 
   const renderInput = () => {
@@ -46,7 +59,6 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
                 value={option.ident} 
                 onChange={handleChange}
                 checked={userAnswer === option.ident}
-                disabled={showAnswer}
                 style={{ marginRight: '8px' }}
               />
               {option.text}
@@ -59,7 +71,6 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
             type="text" 
             value={userAnswer} 
             onChange={handleChange}
-            disabled={showAnswer}
             style={{
               padding: '8px',
               borderRadius: '4px',
@@ -74,7 +85,6 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
           <textarea 
             value={userAnswer} 
             onChange={handleChange}
-            disabled={showAnswer}
             rows="4" 
             cols="50"
             style={{
@@ -91,84 +101,52 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
     }
   }
 
-  const renderResult = () => {
-    if (question.type === 'essay') {
-      return <div>No model answer for essay questions.</div>
-    }
-    if (!showAnswer) return null
+  // For non-essay questions, show feedback if the answer is incorrect.
+  const renderFeedback = () => {
+    if (question.type === 'essay') return null
+    if (!userAnswer) return null
 
-    // For multiple choice and true/false, map the correct answer ident to its text.
-    if (question.type === 'multiple_choice' || question.type === 'true_false') {
-      const correctOption = question.options.find(opt => opt.ident === question.correctAnswer)
-      const correctText = correctOption ? correctOption.text : question.correctAnswer
-      if (userAnswer === question.correctAnswer) {
-        return <div style={{ fontWeight: 'bold', color: 'green', marginBottom: '10px' }}>Correct ✅</div>
-      } else {
-        return (
-          <div style={{ fontWeight: 'bold', marginBottom: '10px', color: 'red' }}>
-            Incorrect ❌. The correct answer is: <span style={{ color: 'green' }}>{correctText}</span>
-          </div>
-        )
+    if (isCorrect()) {
+      return <div style={{ fontWeight: 'bold', color: 'green', marginBottom: '10px' }}>Correct ✅</div>
+    } else {
+      let correctText = question.correctAnswer
+      if (question.type === 'multiple_choice' || question.type === 'true_false') {
+        const correctOption = question.options.find(opt => opt.ident === question.correctAnswer)
+        correctText = correctOption ? correctOption.text : question.correctAnswer
       }
-    }
-    // For fill in the blank questions, compare the text (ignoring case)
-    else if (question.type === 'fill_in') {
-      if (userAnswer.trim().toLowerCase() === question.correctAnswer.trim().toLowerCase()) {
-        return <div style={{ fontWeight: 'bold', color: 'green', marginBottom: '10px' }}>Correct ✅</div>
-      } else {
-        return (
-          <div style={{ fontWeight: 'bold', marginBottom: '10px', color: 'red' }}>
-            Incorrect ❌. The correct answer is: <span style={{ color: 'green' }}>{question.correctAnswer}</span>
-          </div>
-        )
-      }
+      return (
+        <div style={{ fontWeight: 'bold', marginBottom: '10px', color: 'red' }}>
+          Incorrect ❌. The correct answer is: <span style={{ color: 'green' }}>{correctText}</span>
+        </div>
+      )
     }
   }
 
   return (
-    <div className={`question-container ${animationClass}`}>
-      <h2 style={{ textAlign: 'center' }}>Question {questionNumber} of {totalQuestions}</h2>
+    <div className={`question-container ${animationClass} ${shake ? 'shake' : ''}`}>
+      <h2 style={{ textAlign: 'center' }}>{question.title.replace(/^\d+\.\s*/, '')}</h2>
       <div className="question-prompt" style={{ marginBottom: '20px', textAlign: 'center' }}>
         <div dangerouslySetInnerHTML={{ __html: question.prompt }} />
       </div>
       <form onSubmit={handleSubmit}>
         {renderInput()}
-        {!showAnswer && (
-          <div style={{ textAlign: 'center', marginBottom: '10px' }}>
-            <button 
-              type="submit" 
-              style={{
-                padding: '10px 20px', 
-                borderRadius: '5px', 
-                border: 'none', 
-                background: '#007bff', 
-                color: '#fff', 
-                cursor: 'pointer'
-              }}
-            >
-              Submit Answer
-            </button>
-          </div>
-        )}
-      </form>
-      {renderResult()}
-      {showAnswer && (
-        <div style={{ textAlign: 'center' }}>
+        <div style={{ textAlign: 'center', marginBottom: '10px' }}>
           <button 
-            onClick={handleNextClick} 
+            type="submit" 
             style={{
               padding: '10px 20px', 
               borderRadius: '5px', 
               border: 'none', 
-              background: '#28a745', 
+              background: '#007bff', 
               color: '#fff', 
               cursor: 'pointer'
             }}
           >
-            Next Question
+            Submit Answer
           </button>
         </div>
-      )}
+      </form>
+      {renderFeedback()}
     </div>
   )
 }
