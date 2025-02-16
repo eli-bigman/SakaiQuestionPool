@@ -73,6 +73,8 @@ function App() {
             <QuestionComponent 
               question={questions[currentQuestionIndex]}
               onNext={handleNextQuestion}
+              questionNumber={currentQuestionIndex + 1}
+              totalQuestions={questions.length}
             />
             <div className="navigator-container">
               <button 
