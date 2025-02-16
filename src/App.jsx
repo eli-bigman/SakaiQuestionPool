@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import QuestionSelector from './components/QuestionSelector';
 import QuestionComponent from './components/QuestionComponent';
 import parseXML from './utils/parseXML';
-import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   const [questions, setQuestions] = useState([]);
@@ -112,7 +112,7 @@ function App() {
           <a href="https://github.com/eli-bigman/SakaiQuestionPool" target="_blank" rel="noopener noreferrer">See Code</a>
         </div>
       </footer>
-      <Analytics />
+
     </div>
   );
 }
