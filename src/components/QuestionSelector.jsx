@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 
 const QuestionSelector = ({ onSelect }) => {
   const [files, setFiles] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(localStorage.getItem('selectedFile') || '');
   const [filteredFiles, setFilteredFiles] = useState([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const containerRef = useRef(null);
