@@ -21,7 +21,7 @@ const QuestionSelector = ({ onSelect }) => {
     fetchManifest();
   }, []);
 
-  // Filter the files in real time
+  // Filter the files in real time based on the search term
   useEffect(() => {
     const filtered = files.filter(file =>
       file.toLowerCase().includes(searchTerm.toLowerCase())
@@ -29,7 +29,7 @@ const QuestionSelector = ({ onSelect }) => {
     setFilteredFiles(filtered);
   }, [searchTerm, files]);
 
-  // Close dropdown when clicking outside
+  // Close dropdown when clicking outside the container
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (containerRef.current && !containerRef.current.contains(event.target)) {
@@ -54,16 +54,42 @@ const QuestionSelector = ({ onSelect }) => {
     setDropdownOpen(false);
   };
 
+  // Clear the search term and reset selection
+  const clearSearch = () => {
+    setSearchTerm("");
+    onSelect(""); // Notify parent that the selection is cleared, if needed
+    setDropdownOpen(false);
+  };
+
   return (
     <div className="question-selector" ref={containerRef}>
-      <input 
-        type="text"
-        placeholder="Search question pool..."
-        value={searchTerm}
-        onChange={handleSearchChange}
-        onFocus={() => setDropdownOpen(true)}
-        className="search-input"
-      />
+      <div style={{ position: "relative" }}>
+        <input 
+          type="text"
+          placeholder="Search question pool..."
+          value={searchTerm}
+          onChange={handleSearchChange}
+          onFocus={() => setDropdownOpen(true)}
+          className="search-input"
+        />
+        {searchTerm && (
+          <span 
+            onClick={clearSearch}
+            style={{
+              position: "absolute",
+              right: "10px",
+              top: "50%",
+              transform: "translateY(-50%)",
+              cursor: "pointer",
+              fontSize: "1rem",
+              color: "#999"
+            }}
+            title="Clear search"
+          >
+            ×
+          </span>
+        )}
+      </div>
       {dropdownOpen && filteredFiles.length > 0 && (
         <ul className="dropdown-menu">
           {filteredFiles.map((file) => (
