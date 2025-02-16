@@ -29,7 +29,9 @@
 
 ## Demo
 
-[![Sakai Question Pool Demo](https://via.placeholder.com/800x450?text=Sakai+Question+Pool+Demo)](https://github.com/eli-bigman/SakaiQuestionPool)
+[![Sakai Question Pool Demo](./public/pics/image1.png)](https://sakai-question-pool.vercel.app/)
+
+Check out the live app [here](https://sakai-question-pool.vercel.app).
 
 
 
