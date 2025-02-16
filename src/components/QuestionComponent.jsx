@@ -1,7 +1,7 @@
 // src/components/QuestionComponent.jsx
 import React, { useState, useEffect } from 'react'
 
-const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions }) => {
+const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions, direction }) => {
   const [userAnswer, setUserAnswer] = useState("")
   const [shake, setShake] = useState(false)
   const [animationClass, setAnimationClass] = useState("")
@@ -12,11 +12,16 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
   useEffect(() => {
     setUserAnswer("")
     setShake(false)
-    setAnimationClass("slide-in")
     setAutoAdvanced(false)
+    // Set slide-in animation based on direction
+    if (direction === "prev") {
+      setAnimationClass("slide-in-left")
+    } else {
+      setAnimationClass("slide-in-right")
+    }
     const timeout = setTimeout(() => setAnimationClass(""), 500)
     return () => clearTimeout(timeout)
-  }, [question])
+  }, [question, direction])
 
   // Checks if the given answer is correct for non-essay questions
   const isAnswerCorrect = (value) => {
@@ -41,7 +46,7 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
       isAnswerCorrect(value)
     ) {
       setAutoAdvanced(true)
-      setAnimationClass("slide-out")
+      setAnimationClass(direction === "prev" ? "slide-out-right" : "slide-out-left")
       setTimeout(() => {
         onNext()
       }, 700)
@@ -51,13 +56,11 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
   // For essay questions or manual submission when auto-proceed is disabled
   const handleSubmit = (e) => {
     e.preventDefault()
-    // If the answer is not correct, shake the card
     if (!isAnswerCorrect(userAnswer)) {
       setShake(true)
       setTimeout(() => setShake(false), 500)
     } else {
-      // For manual mode, if answer is correct, slide to next question.
-      setAnimationClass("slide-out")
+      setAnimationClass(direction === "prev" ? "slide-out-right" : "slide-out-left")
       setTimeout(() => {
         onNext()
       }, 700)
@@ -68,52 +71,60 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
     switch (question.type) {
       case 'multiple_choice':
       case 'true_false':
-        return question.options.map(option => (
-          <div key={option.ident} style={{ marginBottom: '10px' }}>
-            <label>
-              <input
-                type="radio"
-                name="answer"
-                value={option.ident}
-                onChange={handleChange}
-                onClick={handleChange}  // Ensure immediate detection on click
-                checked={userAnswer === option.ident}
-                style={{ marginRight: '8px' }}
-              />
-              {option.text}
-            </label>
+        return (
+          <div style={{ paddingTop: '20px' }}>
+            {question.options.map(option => (
+              <div key={option.ident} style={{ marginBottom: '10px' }}>
+                <label>
+                  <input
+                    type="radio"
+                    name="answer"
+                    value={option.ident}
+                    onChange={handleChange}
+                    onClick={handleChange} // immediate detection on click
+                    checked={userAnswer === option.ident}
+                    style={{ marginRight: '8px' }}
+                  />
+                  {option.text}
+                </label>
+              </div>
+            ))}
           </div>
-        ))
+        )
       case 'fill_in':
         return (
-          <input
-            type="text"
-            value={userAnswer}
-            onChange={handleChange}
-            style={{
-              padding: '8px',
-              borderRadius: '4px',
-              border: '1px solid #ccc',
-              width: '100%',
-              marginBottom: '10px'
-            }}
-          />
+          <div style={{ paddingTop: '20px' }}>
+            <input
+              type="text"
+              value={userAnswer}
+              onChange={handleChange}
+              style={{
+                padding: '8px',
+                borderRadius: '4px',
+                border: '1px solid #ccc',
+                width: '100%',
+                marginBottom: '10px'
+              }}
+            />
+          </div>
         )
       case 'essay':
         return (
-          <textarea
-            value={userAnswer}
-            onChange={handleChange}
-            rows="4"
-            cols="50"
-            style={{
-              padding: '8px',
-              borderRadius: '4px',
-              border: '1px solid #ccc',
-              width: '100%',
-              marginBottom: '10px'
-            }}
-          />
+          <div style={{ paddingTop: '20px' }}>
+            <textarea
+              value={userAnswer}
+              onChange={handleChange}
+              rows="4"
+              cols="50"
+              style={{
+                padding: '8px',
+                borderRadius: '4px',
+                border: '1px solid #ccc',
+                width: '100%',
+                marginBottom: '10px'
+              }}
+            />
+          </div>
         )
       default:
         return null
@@ -121,7 +132,6 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
   }
 
   const renderFeedback = () => {
-    // Do not show feedback for essay questions (or if no answer provided yet)
     if (question.type === 'essay' || !userAnswer) return null
 
     if (isAnswerCorrect(userAnswer)) {
@@ -141,32 +151,30 @@ const QuestionComponent = ({ question, onNext, questionNumber, totalQuestions })
   }
 
   return (
-<div className={`question-container ${animationClass} ${shake ? 'shake' : ''}`}>
-  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingBottom: '10px' }}>
-    <div>
-      <h2 style={{ margin: 0, textAlign: 'center'}}>
-        Question {questionNumber} / {totalQuestions}
-      </h2>
-    </div>
-    {/* Simple Auto-Advance Checkbox */}
-    {question.type !== 'essay' && (
-      <div style={{ marginLeft: '10px', fontSize: '0.8rem', display: 'flex', alignItems: 'center' }}>
-        <label style={{ marginRight: '4px' }}>Auto-Advance</label>
-        <input 
-          type="checkbox"
-          checked={autoProceedEnabled}
-          onChange={() => setAutoProceedEnabled(!autoProceedEnabled)}
-          style={{ transform: 'scale(0.8)' }}
-        />
+    <div className={`question-container ${animationClass} ${shake ? 'shake' : ''}`}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingBottom: '50px' }}>
+        <div>
+          <h2 style={{ margin: 0, textAlign: 'center' }}>
+            Question {questionNumber} / {totalQuestions}
+          </h2>
+        </div>
+        {question.type !== 'essay' && (
+          <div style={{ marginLeft: '10px', fontSize: '0.7rem', display: 'flex', alignItems: 'center' }}>
+            <label style={{ marginRight: '4px' }}>Auto-Advance</label>
+            <input 
+              type="checkbox"
+              checked={autoProceedEnabled}
+              onChange={() => setAutoProceedEnabled(!autoProceedEnabled)}
+              style={{ transform: 'scale(0.7)' }}
+            />
+          </div>
+        )}
       </div>
-    )}
-  </div>
       <div className="question-prompt" style={{ marginBottom: '20px', textAlign: 'center' }}>
         <div dangerouslySetInnerHTML={{ __html: question.prompt }} />
       </div>
       <form onSubmit={handleSubmit}>
         {renderInput()}
-        {/* Render submit button only if it's an essay or if auto-proceed is disabled */}
         {(question.type === 'essay' || !autoProceedEnabled) && (
           <div style={{ textAlign: 'center', marginBottom: '10px' }}>
             <button

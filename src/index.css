@@ -41,16 +41,7 @@ body {
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-/* Animation classes for slide in/out effects */
-.slide-in {
-  animation: slideIn 0.5s forwards;
-}
-
-.slide-out {
-  animation: slideOut 0.5s forwards;
-}
-
-@keyframes slideIn {
+@keyframes slideInRight {
   from {
     transform: translateX(100%);
     opacity: 0;
@@ -61,7 +52,29 @@ body {
   }
 }
 
-@keyframes slideOut {
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutLeft {
   from {
     transform: translateX(0);
     opacity: 1;
@@ -71,6 +84,25 @@ body {
     opacity: 0;
   }
 }
+
+.slide-in-right {
+  animation: slideInRight 0.5s forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s forwards;
+}
+
+.slide-out-right {
+  animation: slideOutRight 0.5s forwards;
+}
+
+.slide-out-left {
+  animation: slideOutLeft 0.5s forwards;
+}
+
+
+
 
 /* Shake animation for incorrect answers */
 @keyframes shake {
