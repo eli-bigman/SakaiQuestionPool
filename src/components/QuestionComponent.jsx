@@ -82,6 +82,8 @@ const QuestionComponent = ({
       } else {
         // If wrong, show feedback so the correct answer is visible
         setSubmitted(true);
+        setShake(true);
+        setTimeout(() => setShake(false), 500);
       }
     }
   };
