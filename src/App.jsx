@@ -1,37 +1,40 @@
 // src/App.jsx
-import React, { useState, useEffect } from 'react';
-import QuestionSelector from './components/QuestionSelector';
-import QuestionComponent from './components/QuestionComponent';
-import parseXML from './utils/parseXML';
+import React, { useState, useEffect } from "react";
+import QuestionSelector from "./components/QuestionSelector";
+import QuestionComponent from "./components/QuestionComponent";
+import parseXML from "./utils/parseXML";
 
 function App() {
   const [questions, setQuestions] = useState(() => {
-    return JSON.parse(localStorage.getItem('questions')) || [];
+    return JSON.parse(localStorage.getItem("questions")) || [];
   });
-  const [selectedFile, setSelectedFile] = useState(() => localStorage.getItem('selectedFile') || null);
+  const [selectedFile, setSelectedFile] = useState(
+    () => localStorage.getItem("selectedFile") || null
+  );
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(() => {
-    return parseInt(localStorage.getItem('currentQuestionIndex'), 10) || 0;
+    return parseInt(localStorage.getItem("currentQuestionIndex"), 10) || 0;
   });
   const [userAnswers, setUserAnswers] = useState(() => {
-    return JSON.parse(localStorage.getItem('userAnswers')) || {};
+    return JSON.parse(localStorage.getItem("userAnswers")) || {};
   });
   const [darkMode, setDarkMode] = useState(() => {
-    return JSON.parse(localStorage.getItem('darkMode')) || false;
+    return JSON.parse(localStorage.getItem("darkMode")) || false;
   });
   const [direction, setDirection] = useState("next");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
-      document.body.classList.add('dark-mode');
+      document.body.classList.add("dark-mode");
     } else {
-      document.body.classList.remove('dark-mode');
+      document.body.classList.remove("dark-mode");
     }
-    localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
   }, [darkMode]);
 
   useEffect(() => {
     if (!selectedFile) return;
-    const storedQuestions = JSON.parse(localStorage.getItem('questions'));
+    const storedQuestions = JSON.parse(localStorage.getItem("questions"));
     if (storedQuestions && storedQuestions.length > 0) {
       setQuestions(storedQuestions);
     } else {
@@ -41,29 +44,31 @@ function App() {
 
   const handleFileSelect = async (fileName) => {
     setSelectedFile(fileName);
-    localStorage.setItem('selectedFile', fileName);
+    localStorage.setItem("selectedFile", fileName);
+    setLoading(true);
     try {
       const response = await fetch(`/xml_files/${fileName}`);
       const xmlText = await response.text();
       const parsedQuestions = parseXML(xmlText);
       setQuestions(parsedQuestions);
-      localStorage.setItem('questions', JSON.stringify(parsedQuestions));
+      localStorage.setItem("questions", JSON.stringify(parsedQuestions));
       // Reset progress when loading a new file
       setCurrentQuestionIndex(0);
       setUserAnswers({});
-      localStorage.setItem('currentQuestionIndex', 0);
-      localStorage.setItem('userAnswers', JSON.stringify({}));
+      localStorage.setItem("currentQuestionIndex", 0);
+      localStorage.setItem("userAnswers", JSON.stringify({}));
     } catch (error) {
       console.error("Error fetching XML file:", error);
     }
+    setLoading(false);
   };
 
   const handleNextQuestion = () => {
     if (currentQuestionIndex < questions.length - 1) {
       setDirection("next");
-      setCurrentQuestionIndex(prev => {
+      setCurrentQuestionIndex((prev) => {
         const newIndex = prev + 1;
-        localStorage.setItem('currentQuestionIndex', newIndex);
+        localStorage.setItem("currentQuestionIndex", newIndex);
         return newIndex;
       });
     }
@@ -72,9 +77,9 @@ function App() {
   const handlePrevQuestion = () => {
     if (currentQuestionIndex > 0) {
       setDirection("prev");
-      setCurrentQuestionIndex(prev => {
+      setCurrentQuestionIndex((prev) => {
         const newIndex = prev - 1;
-        localStorage.setItem('currentQuestionIndex', newIndex);
+        localStorage.setItem("currentQuestionIndex", newIndex);
         return newIndex;
       });
     }
@@ -84,28 +89,30 @@ function App() {
     const value = parseInt(e.target.value, 10);
     if (value > 0 && value <= questions.length) {
       setCurrentQuestionIndex(value - 1);
-      localStorage.setItem('currentQuestionIndex', value - 1);
+      localStorage.setItem("currentQuestionIndex", value - 1);
     }
   };
 
   return (
     <div className="app-container">
       <div className="content">
-        <header style={{ 
-            display: "flex", 
-            justifyContent: "space-between", 
-            alignItems: "center", 
-            width: "100%", 
-            maxWidth: "800px", 
-            marginBottom: "20px" 
-          }}>
+        <header
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            width: "100%",
+            maxWidth: "800px",
+            marginBottom: "20px",
+          }}
+        >
           <h1>Sakai Question Pool</h1>
           <div style={{ display: "flex", alignItems: "center" }}>
             <span style={{ marginRight: "8px" }}>Dark Mode</span>
             <label className="switch">
-              <input 
-                type="checkbox" 
-                checked={darkMode} 
+              <input
+                type="checkbox"
+                checked={darkMode}
                 onChange={() => setDarkMode(!darkMode)}
               />
               <span className="slider"></span>
@@ -115,7 +122,11 @@ function App() {
 
         <QuestionSelector onSelect={handleFileSelect} />
 
-        {questions.length > 0 ? (
+        {loading ? (
+          <div style={{ textAlign: "center", padding: "20px" }}>
+            <div className="spinner"></div>
+          </div>
+        ) : questions.length > 0 ? (
           <>
             <QuestionComponent
               question={questions[currentQuestionIndex]}
@@ -126,16 +137,16 @@ function App() {
               onQuestionNumberChange={handleQuestionNumberChange}
             />
             <div className="navigator-container">
-              <button 
-                className="navigator-btn" 
-                onClick={handlePrevQuestion} 
+              <button
+                className="navigator-btn"
+                onClick={handlePrevQuestion}
                 disabled={currentQuestionIndex === 0}
               >
                 Previous
               </button>
-              <button 
-                className="navigator-btn" 
-                onClick={handleNextQuestion} 
+              <button
+                className="navigator-btn"
+                onClick={handleNextQuestion}
                 disabled={currentQuestionIndex === questions.length - 1}
               >
                 Next
@@ -150,10 +161,23 @@ function App() {
       </div>
       <footer className="app-footer">
         <div className="footer-left">
-          by <a href="https://github.com/eli-bigman" target="_blank" rel="noopener noreferrer">eli-bigman</a>
+          by{" "}
+          <a
+            href="https://github.com/eli-bigman"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            eli-bigman
+          </a>
         </div>
         <div className="footer-right">
-          <a href="https://github.com/eli-bigman/SakaiQuestionPool" target="_blank" rel="noopener noreferrer">See Code</a>
+          <a
+            href="https://github.com/eli-bigman/SakaiQuestionPool"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See Code
+          </a>
         </div>
       </footer>
     </div>

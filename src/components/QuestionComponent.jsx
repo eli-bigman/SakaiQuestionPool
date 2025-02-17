@@ -187,7 +187,10 @@ const QuestionComponent = ({
   // Handle number field editing: clear field on focus, and on blur validate and update
   const handleNumberBlur = () => {
     let val = parseInt(questionNumberInput, 10);
-    if (isNaN(val) || val < 1) {
+    if (isNaN(val)) {
+      // If the field is empty or invalid, revert to the current question number
+      val = questionNumber;
+    } else if (val < 1) {
       val = 1;
     } else if (val > totalQuestions) {
       val = totalQuestions;
@@ -195,6 +198,7 @@ const QuestionComponent = ({
     setQuestionNumberInput(val.toString());
     onQuestionNumberChange({ target: { value: val } });
   };
+  
 
   const handleNumberKeyDown = (e) => {
     if (e.key === 'Enter') {
@@ -218,7 +222,6 @@ const QuestionComponent = ({
             onChange={(e) => setQuestionNumberInput(e.target.value)}
             onBlur={handleNumberBlur}
             onKeyDown={handleNumberKeyDown}
-            onFocus={handleNumberFocus}
             style={{
               width: '50px',
               margin: '0 5px',
