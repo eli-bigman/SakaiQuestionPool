@@ -1,0 +1,4841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p2/ccv1p2_qtiasiv1p2p1_v1p0.xsd">
+  <objectbank ident="QDB_DCIT428">
+    <!-- Quiz 0 Questions (DCIT 428 IA) -->
+    <item ident="QUE_quiz0_1" title="Quiz 0 - Question 1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">The effect of an amplifier boosting a signal strength is known as:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_1_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_1_1">
+              <material>
+                <mattext texttype="text/html">increase</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_1_2">
+              <material>
+                <mattext texttype="text/html">gain</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_1_3">
+              <material>
+                <mattext texttype="text/html">expansion</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_1_4">
+              <material>
+                <mattext texttype="text/html">enlargement</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_1_RL">QUE_quiz0_1_2</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_2" title="Quiz 0 - Question 2">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Cables and connectors offer resistance to current flow, and this results in:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_2_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_2_1">
+              <material>
+                <mattext texttype="text/html">signal increase</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_2_2">
+              <material>
+                <mattext texttype="text/html">signal gain</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_2_3">
+              <material>
+                <mattext texttype="text/html">signal loss</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_2_4">
+              <material>
+                <mattext texttype="text/html">signal enlargement</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_2_RL">QUE_quiz0_2_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_3" title="Quiz 0 - Question 3">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Signal power changes as a logarithmic function.</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_3_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_3_1">
+              <material>
+                <mattext texttype="text/html">True</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_3_2">
+              <material>
+                <mattext texttype="text/html">False</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_3_3">
+              <material>
+                <mattext texttype="text/html">It depends</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_3_4">
+              <material>
+                <mattext texttype="text/html">Never changes</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_3_RL">QUE_quiz0_3_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_4" title="Quiz 0 - Question 4">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">The decibel is the ratio of 2 signal levels.</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_4_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_4_1">
+              <material>
+                <mattext texttype="text/html">actually 4 signal levels</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_4_2">
+              <material>
+                <mattext texttype="text/html">it depends</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_4_3">
+              <material>
+                <mattext texttype="text/html">True</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_4_4">
+              <material>
+                <mattext texttype="text/html">False</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_4_RL">QUE_quiz0_4_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_5" title="Quiz 0 - Question 5">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">A decibel value of +3dB means the signal is:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_5_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_5_1">
+              <material>
+                <mattext texttype="text/html">2 times larger</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_5_2">
+              <material>
+                <mattext texttype="text/html">2 times smaller</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_5_3">
+              <material>
+                <mattext texttype="text/html">3 times larger</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_5_4">
+              <material>
+                <mattext texttype="text/html">3 times smaller</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_5_RL">QUE_quiz0_5_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <!-- Due to context length limits, I'll continue with the pattern for all 50 questions -->
+    <!-- Questions 6-50 will follow the same structure -->
+    
+    <item ident="QUE_quiz0_6" title="Quiz 0 - Question 6">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">A decibel value of +10dB means the signal is:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_6_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_6_1">
+              <material>
+                <mattext texttype="text/html">100 times larger</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_6_2">
+              <material>
+                <mattext texttype="text/html">100 times smaller</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_6_3">
+              <material>
+                <mattext texttype="text/html">10 times larger</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_6_4">
+              <material>
+                <mattext texttype="text/html">10 times smaller</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_6_RL">QUE_quiz0_6_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_7" title="Quiz 0 - Question 7">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not true about an isotropic radiator?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_7_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_7_1">
+              <material>
+                <mattext texttype="text/html">radiates equally well in all directions</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_7_2">
+              <material>
+                <mattext texttype="text/html">provides a reference point for representing gain</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_7_3">
+              <material>
+                <mattext texttype="text/html">expressed as dbi</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_7_4">
+              <material>
+                <mattext texttype="text/html">has a value of 0 dBm</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_7_RL">QUE_quiz0_7_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_8" title="Quiz 0 - Question 8">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">The size of an antenna depends on the frequency it is designed to operate on.</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_8_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_8_1">
+              <material>
+                <mattext texttype="text/html">True</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_8_2">
+              <material>
+                <mattext texttype="text/html">False</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_8_3">
+              <material>
+                <mattext texttype="text/html">Only at very high frequencies</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_8_4">
+              <material>
+                <mattext texttype="text/html">Only at very low frequencies</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_8_RL">QUE_quiz0_8_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_9" title="Quiz 0 - Question 9">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not a type of antenna?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_9_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_9_1">
+              <material>
+                <mattext texttype="text/html">Omnidirectional</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_9_2">
+              <material>
+                <mattext texttype="text/html">quadpole</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_9_3">
+              <material>
+                <mattext texttype="text/html">dipole</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_9_4">
+              <material>
+                <mattext texttype="text/html">monopole</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_9_RL">QUE_quiz0_9_2</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_10" title="Quiz 0 - Question 10">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">A passive antenna will amplify the signal in all directions.</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_10_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_10_1">
+              <material>
+                <mattext texttype="text/html">True</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_10_2">
+              <material>
+                <mattext texttype="text/html">False</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_10_3">
+              <material>
+                <mattext texttype="text/html">Only in one direction</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_10_4">
+              <material>
+                <mattext texttype="text/html">Does not amplify the signal.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_10_RL">QUE_quiz0_10_2</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_11" title="Quiz 0 - Question 11">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">The primary purpose of a transmitter is to:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_11_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_11_1">
+              <material>
+                <mattext texttype="text/html">receive signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_11_2">
+              <material>
+                <mattext texttype="text/html">amplify signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_11_3">
+              <material>
+                <mattext texttype="text/html">convert signals to a different format</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_11_4">
+              <material>
+                <mattext texttype="text/html">generate and transmit signals</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_11_RL">QUE_quiz0_11_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_12" title="Quiz 0 - Question 12">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">In a communication system, the receiver's main function is to:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_12_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_12_1">
+              <material>
+                <mattext texttype="text/html">generate signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_12_2">
+              <material>
+                <mattext texttype="text/html">amplify signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_12_3">
+              <material>
+                <mattext texttype="text/html">detect and convert signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_12_4">
+              <material>
+                <mattext texttype="text/html">filter out noise</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_12_RL">QUE_quiz0_12_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_13" title="Quiz 0 - Question 13">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">The term "bandwidth" in a communication system refers to:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_13_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_13_1">
+              <material>
+                <mattext texttype="text/html">The physical size of the system</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_13_2">
+              <material>
+                <mattext texttype="text/html">The range of frequencies it can transmit or receive</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_13_3">
+              <material>
+                <mattext texttype="text/html">The amount of signal distortion</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_13_4">
+              <material>
+                <mattext texttype="text/html">The strength of the signal</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_13_RL">QUE_quiz0_13_2</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_14" title="Quiz 0 - Question 14">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Modulation in a communication signal is used to:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_14_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_14_1">
+              <material>
+                <mattext texttype="text/html">Increase the signal strength</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_14_2">
+              <material>
+                <mattext texttype="text/html">Allow the signal to travel longer distances</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_14_3">
+              <material>
+                <mattext texttype="text/html">Carry information by varying some aspect of the signal</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_14_4">
+              <material>
+                <mattext texttype="text/html">Reduce interference with other signals</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_14_RL">QUE_quiz0_14_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_15" title="Quiz 0 - Question 15">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">The purpose of a communication protocol is to:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_15_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_15_1">
+              <material>
+                <mattext texttype="text/html">Define the physical characteristics of the communication channel</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_15_2">
+              <material>
+                <mattext texttype="text/html">Specify the rules and conventions for communication between devices</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_15_3">
+              <material>
+                <mattext texttype="text/html">Encrypt the communication to ensure privacy</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_15_4">
+              <material>
+                <mattext texttype="text/html">Compress the data to save bandwidth</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_15_RL">QUE_quiz0_15_2</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_16" title="Quiz 0 - Question 16">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">The decibel is the logarithmic unit used to express:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_16_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_16_1">
+              <material>
+                <mattext texttype="text/html">Frequency</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_16_2">
+              <material>
+                <mattext texttype="text/html">Power</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_16_3">
+              <material>
+                <mattext texttype="text/html">Wavelength</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_16_4">
+              <material>
+                <mattext texttype="text/html">Voltage</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_16_RL">QUE_quiz0_16_2</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_17" title="Quiz 0 - Question 17">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is a guided transmission medium?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_17_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_17_1">
+              <material>
+                <mattext texttype="text/html">Fiber optic cable</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_17_2">
+              <material>
+                <mattext texttype="text/html">Radio wave</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_17_3">
+              <material>
+                <mattext texttype="text/html">Microwave</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_17_4">
+              <material>
+                <mattext texttype="text/html">Infrared</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_17_RL">QUE_quiz0_17_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_18" title="Quiz 0 - Question 18">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">What is the primary purpose of modulation in wireless communication?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_18_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_18_1">
+              <material>
+                <mattext texttype="text/html">Improve signal quality</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_18_2">
+              <material>
+                <mattext texttype="text/html">Increase signal strength</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_18_3">
+              <material>
+                <mattext texttype="text/html">Reduce interference</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_18_4">
+              <material>
+                <mattext texttype="text/html">Enable long-distance transmission</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_18_RL">QUE_quiz0_18_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_19" title="Quiz 0 - Question 19">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is an example of a wireless communication technology?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_19_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_19_1">
+              <material>
+                <mattext texttype="text/html">Bluetooth</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_19_2">
+              <material>
+                <mattext texttype="text/html">Ethernet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_19_3">
+              <material>
+                <mattext texttype="text/html">USB</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_19_4">
+              <material>
+                <mattext texttype="text/html">HDMI</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_19_RL">QUE_quiz0_19_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_20" title="Quiz 0 - Question 20">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">The process of converting analog signals to digital format is known as:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_20_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_20_1">
+              <material>
+                <mattext texttype="text/html">Modulation</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_20_2">
+              <material>
+                <mattext texttype="text/html">Demodulation</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_20_3">
+              <material>
+                <mattext texttype="text/html">Encoding</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_20_4">
+              <material>
+                <mattext texttype="text/html">Sampling</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_20_RL">QUE_quiz0_20_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_21" title="Quiz 0 - Question 21">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not a wireless communication standard?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_21_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_21_1">
+              <material>
+                <mattext texttype="text/html">Wi-Fi</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_21_2">
+              <material>
+                <mattext texttype="text/html">Bluetooth</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_21_3">
+              <material>
+                <mattext texttype="text/html">LTE</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_21_4">
+              <material>
+                <mattext texttype="text/html">Ethernet</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_21_RL">QUE_quiz0_21_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_22" title="Quiz 0 - Question 22">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">The maximum data rate that can be achieved in a noiseless channel is determined by:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_22_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_22_1">
+              <material>
+                <mattext texttype="text/html">Nyquist bandwidth</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_22_2">
+              <material>
+                <mattext texttype="text/html">Shannon capacity</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_22_3">
+              <material>
+                <mattext texttype="text/html">Signal-to-noise ratio</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_22_4">
+              <material>
+                <mattext texttype="text/html">Channel bandwidth</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_22_RL">QUE_quiz0_22_2</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_23" title="Quiz 0 - Question 23">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is a disadvantage of wireless communication?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_23_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_23_1">
+              <material>
+                <mattext texttype="text/html">Limited range</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_23_2">
+              <material>
+                <mattext texttype="text/html">High cost</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_23_3">
+              <material>
+                <mattext texttype="text/html">Complexity</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_23_4">
+              <material>
+                <mattext texttype="text/html">Low data rates</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_23_RL">QUE_quiz0_23_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_24" title="Quiz 0 - Question 24">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">In wireless communication, what is the purpose of error correction coding?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_24_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_24_1">
+              <material>
+                <mattext texttype="text/html">Enhance security</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_24_2">
+              <material>
+                <mattext texttype="text/html">Reduce interference</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_24_3">
+              <material>
+                <mattext texttype="text/html">Improve data transmission reliability</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_24_4">
+              <material>
+                <mattext texttype="text/html">Increase signal strength</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_24_RL">QUE_quiz0_24_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_25" title="Quiz 0 - Question 25">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not a component of a cellular network?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_25_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_25_1">
+              <material>
+                <mattext texttype="text/html">Base station</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_25_2">
+              <material>
+                <mattext texttype="text/html">Mobile device</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_25_3">
+              <material>
+                <mattext texttype="text/html">Network switch</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_25_4">
+              <material>
+                <mattext texttype="text/html">Subscriber Identity Module (SIM) card</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_25_RL">QUE_quiz0_25_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_26" title="Quiz 0 - Question 26">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is used to provide long-range communication?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_26_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_26_1">
+              <material>
+                <mattext texttype="text/html">Radio waves</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_26_2">
+              <material>
+                <mattext texttype="text/html">Infra-red waves</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_26_3">
+              <material>
+                <mattext texttype="text/html">Gamma rays</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_26_4">
+              <material>
+                <mattext texttype="text/html">None of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_26_RL">QUE_quiz0_26_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_27" title="Quiz 0 - Question 27">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">What is the primary function of a repeater in wireless communication?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_27_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_27_1">
+              <material>
+                <mattext texttype="text/html">Amplify signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_27_2">
+              <material>
+                <mattext texttype="text/html">Decode signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_27_3">
+              <material>
+                <mattext texttype="text/html">Modulate signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_27_4">
+              <material>
+                <mattext texttype="text/html">Encrypt signals</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_27_RL">QUE_quiz0_27_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_28" title="Quiz 0 - Question 28">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">What is the purpose of the Access Point (AP) in wireless networks?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_28_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_28_1">
+              <material>
+                <mattext texttype="text/html">Connect wired and wireless networks</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_28_2">
+              <material>
+                <mattext texttype="text/html">Amplify signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_28_3">
+              <material>
+                <mattext texttype="text/html">Encrypt data</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_28_4">
+              <material>
+                <mattext texttype="text/html">Decode signals</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_28_RL">QUE_quiz0_28_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_29" title="Quiz 0 - Question 29">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is a type of guided transmission medium?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_29_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_29_1">
+              <material>
+                <mattext texttype="text/html">Coaxial cable</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_29_2">
+              <material>
+                <mattext texttype="text/html">Wi-Fi</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_29_3">
+              <material>
+                <mattext texttype="text/html">Infrared</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_29_4">
+              <material>
+                <mattext texttype="text/html">Bluetooth</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_29_RL">QUE_quiz0_29_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_30" title="Quiz 0 - Question 30">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not a wireless channel propagation mechanism?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_30_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_30_1">
+              <material>
+                <mattext texttype="text/html">Reflection</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_30_2">
+              <material>
+                <mattext texttype="text/html">Refraction</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_30_3">
+              <material>
+                <mattext texttype="text/html">Diffraction</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_30_4">
+              <material>
+                <mattext texttype="text/html">Transmission</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_30_RL">QUE_quiz0_30_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_31" title="Quiz 0 - Question 31">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">What is the primary purpose of error detection coding in wireless communication?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_31_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_31_1">
+              <material>
+                <mattext texttype="text/html">Enhance security</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_31_2">
+              <material>
+                <mattext texttype="text/html">Reduce interference</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_31_3">
+              <material>
+                <mattext texttype="text/html">Improve data transmission reliability</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_31_4">
+              <material>
+                <mattext texttype="text/html">Increase signal strength</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_31_RL">QUE_quiz0_31_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_32" title="Quiz 0 - Question 32">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not an advantage of wireless communication?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_32_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_32_1">
+              <material>
+                <mattext texttype="text/html">Mobility</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_32_2">
+              <material>
+                <mattext texttype="text/html">Scalability</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_32_3">
+              <material>
+                <mattext texttype="text/html">Ease of deployment</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_32_4">
+              <material>
+                <mattext texttype="text/html">Unlimited bandwidth</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_32_RL">QUE_quiz0_32_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_33" title="Quiz 0 - Question 33">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is a wireless communication technology commonly used in short-range applications like wireless mice and keyboards?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_33_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_33_1">
+              <material>
+                <mattext texttype="text/html">Bluetooth</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_33_2">
+              <material>
+                <mattext texttype="text/html">Wi-Fi</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_33_3">
+              <material>
+                <mattext texttype="text/html">Cellular</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_33_4">
+              <material>
+                <mattext texttype="text/html">NFC</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_33_RL">QUE_quiz0_33_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_34" title="Quiz 0 - Question 34">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not a component of a wireless communication system?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_34_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_34_1">
+              <material>
+                <mattext texttype="text/html">Transceiver</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_34_2">
+              <material>
+                <mattext texttype="text/html">Antenna</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_34_3">
+              <material>
+                <mattext texttype="text/html">Modem</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_34_4">
+              <material>
+                <mattext texttype="text/html">Router</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_34_RL">QUE_quiz0_34_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_35" title="Quiz 0 - Question 35">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">What is the function of a router in wireless networks?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_35_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_35_1">
+              <material>
+                <mattext texttype="text/html">Connect multiple networks</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_35_2">
+              <material>
+                               <mattext texttype="text/html">Transmit signals over long distances</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_35_3">
+              <material>
+                <mattext texttype="text/html">Decode wireless signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_35_4">
+              <material>
+                <mattext texttype="text/html">Amplify wireless signals</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_35_RL">QUE_quiz0_35_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_36" title="Quiz 0 - Question 36">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not a type of wireless antenna?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_36_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_36_1">
+              <material>
+                <mattext texttype="text/html">Yagi antenna</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_36_2">
+              <material>
+                <mattext texttype="text/html">Parabolic dish antenna</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_36_3">
+              <material>
+                <mattext texttype="text/html">Coaxial antenna</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_36_4">
+              <material>
+                <mattext texttype="text/html">Patch antenna</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_36_RL">QUE_quiz0_36_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_37" title="Quiz 0 - Question 37">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not a wireless communication frequency band?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_37_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_37_1">
+              <material>
+                <mattext texttype="text/html">2.4 GHz</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_37_2">
+              <material>
+                <mattext texttype="text/html">5 GHz</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_37_3">
+              <material>
+                <mattext texttype="text/html">60 GHz</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_37_4">
+              <material>
+                <mattext texttype="text/html">100 MHz</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_37_RL">QUE_quiz0_37_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_38" title="Quiz 0 - Question 38">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">What is the purpose of frequency hopping in wireless communication?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_38_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_38_1">
+              <material>
+                <mattext texttype="text/html">Increase data transfer rates</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_38_2">
+              <material>
+                <mattext texttype="text/html">Improve signal quality</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_38_3">
+              <material>
+                <mattext texttype="text/html">Reduce interference</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_38_4">
+              <material>
+                <mattext texttype="text/html">Extend the range of communication</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_38_RL">QUE_quiz0_38_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_39" title="Quiz 0 - Question 39">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not a wireless network security mechanism?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_39_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_39_1">
+              <material>
+                <mattext texttype="text/html">WPA2</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_39_2">
+              <material>
+                <mattext texttype="text/html">SSL</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_39_3">
+              <material>
+                <mattext texttype="text/html">WEP</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_39_4">
+              <material>
+                <mattext texttype="text/html">MAC filtering</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_39_RL">QUE_quiz0_39_2</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_40" title="Quiz 0 - Question 40">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">What is the purpose of a beacon frame in wireless networks?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_40_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_40_1">
+              <material>
+                <mattext texttype="text/html">Encrypt data transmission</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_40_2">
+              <material>
+                <mattext texttype="text/html">Identify network devices</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_40_3">
+              <material>
+                <mattext texttype="text/html">Allocate network resources</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_40_4">
+              <material>
+                <mattext texttype="text/html">Establish network synchronization</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_40_RL">QUE_quiz0_40_2</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_41" title="Quiz 0 - Question 41">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following wireless communication technologies is commonly used for short-range communication between devices?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_41_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_41_1">
+              <material>
+                <mattext texttype="text/html">NFC</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_41_2">
+              <material>
+                <mattext texttype="text/html">LTE</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_41_3">
+              <material>
+                <mattext texttype="text/html">WiMAX</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_41_4">
+              <material>
+                <mattext texttype="text/html">Satellite communication</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_41_RL">QUE_quiz0_41_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_42" title="Quiz 0 - Question 42">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">What is the purpose of error correction coding in wireless communication?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_42_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_42_1">
+              <material>
+                <mattext texttype="text/html">Improve network performance</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_42_2">
+              <material>
+                <mattext texttype="text/html">Enhance data security</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_42_3">
+              <material>
+                <mattext texttype="text/html">Increase transmission speed</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_42_4">
+              <material>
+                <mattext texttype="text/html">Minimize data loss or errors</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_42_RL">QUE_quiz0_42_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_43" title="Quiz 0 - Question 43">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is a wireless networking standard commonly used for home and small office networks?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_43_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_43_1">
+              <material>
+                <mattext texttype="text/html">Ethernet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_43_2">
+              <material>
+                <mattext texttype="text/html">USB</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_43_3">
+              <material>
+                <mattext texttype="text/html">Bluetooth</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_43_4">
+              <material>
+                <mattext texttype="text/html">Wi-Fi</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_43_RL">QUE_quiz0_43_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_44" title="Quiz 0 - Question 44">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">What is the purpose of an MAC address in wireless communication?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_44_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_44_1">
+              <material>
+                <mattext texttype="text/html">Identify network interfaces</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_44_2">
+              <material>
+                <mattext texttype="text/html">Establish network synchronization</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_44_3">
+              <material>
+                <mattext texttype="text/html">Encrypt data transmission</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_44_4">
+              <material>
+                <mattext texttype="text/html">Allocate IP addresses</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_44_RL">QUE_quiz0_44_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_45" title="Quiz 0 - Question 45">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following wireless communication technologies uses radio waves to transmit data over short distances?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_45_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_45_1">
+              <material>
+                <mattext texttype="text/html">Bluetooth</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_45_2">
+              <material>
+                <mattext texttype="text/html">LTE</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_45_3">
+              <material>
+                <mattext texttype="text/html">Satellite communication</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_45_4">
+              <material>
+                <mattext texttype="text/html">Fiber optics</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_45_RL">QUE_quiz0_45_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_46" title="Quiz 0 - Question 46">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">What is the purpose of handover in cellular networks?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_46_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_46_1">
+              <material>
+                <mattext texttype="text/html">Secure data transmission</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_46_2">
+              <material>
+                <mattext texttype="text/html">Allocate network resources</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_46_3">
+              <material>
+                <mattext texttype="text/html">Manage signal interference</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_46_4">
+              <material>
+                <mattext texttype="text/html">Maintain seamless connectivity during mobility</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_46_RL">QUE_quiz0_46_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_47" title="Quiz 0 - Question 47">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not a factor that affects wireless signal propagation?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_47_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_47_1">
+              <material>
+                <mattext texttype="text/html">Reflection</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_47_2">
+              <material>
+                <mattext texttype="text/html">Refraction</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_47_3">
+              <material>
+                <mattext texttype="text/html">Diffraction</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_47_4">
+              <material>
+                <mattext texttype="text/html">Gravity</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_47_RL">QUE_quiz0_47_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_48" title="Quiz 0 - Question 48">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is not a method for increasing the capacity of wireless communication systems?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_48_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_48_1">
+              <material>
+                <mattext texttype="text/html">Multiple-input multiple-output (MIMO)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_48_2">
+              <material>
+                <mattext texttype="text/html">Orthogonal Frequency Division Multiplexing (OFDM)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_48_3">
+              <material>
+                <mattext texttype="text/html">Spread Spectrum Techniques</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_48_4">
+              <material>
+                <mattext texttype="text/html">Time Division Multiple Access (TDMA)</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_48_RL">QUE_quiz0_48_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_49" title="Quiz 0 - Question 49">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">What is the purpose of an Access Point (AP) in wireless networks?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_49_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_49_1">
+              <material>
+                <mattext texttype="text/html">Connect wired and wireless networks</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_49_2">
+              <material>
+                <mattext texttype="text/html">Authenticate network users</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_49_3">
+              <material>
+                <mattext texttype="text/html">Allocate IP addresses</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_49_4">
+              <material>
+                <mattext texttype="text/html">Transmit data over long distances</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_49_RL">QUE_quiz0_49_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz0_50" title="Quiz 0 - Question 50">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following wireless communication technologies is commonly used for mobile cellular networks?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz0_50_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz0_50_1">
+              <material>
+                <mattext texttype="text/html">LTE</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_50_2">
+              <material>
+                <mattext texttype="text/html">Wi-Fi</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_50_3">
+              <material>
+                <mattext texttype="text/html">Bluetooth</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz0_50_4">
+              <material>
+                <mattext texttype="text/html">NFC</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz0_50_RL">QUE_quiz0_50_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <!-- Quiz 1 Questions -->
+    <item ident="QUE_quiz1_1" title="Quiz 1 - Question 1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following personalities was a pioneer of wireless communication?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_1_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_1_1">
+              <material>
+                <mattext texttype="text/html">Alan Turing</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_1_2">
+              <material>
+                <mattext texttype="text/html">George Boole</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_1_3">
+              <material>
+                <mattext texttype="text/html">Guglielmo Marconi</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_1_4">
+              <material>
+                <mattext texttype="text/html">Richard Hamming</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_1_RL">QUE_quiz1_1_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz1_2" title="Quiz 1 - Question 2">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following personalities is NOT considered as a pioneer of wireless communication?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_2_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_2_1">
+              <material>
+                <mattext texttype="text/html">Alan Turing</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_2_2">
+              <material>
+                <mattext texttype="text/html">Henrich Hertz</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_2_3">
+              <material>
+                <mattext texttype="text/html">Guglielmo Marconi</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_2_4">
+              <material>
+                <mattext texttype="text/html">Nikola Tesla</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_2_RL">QUE_quiz1_2_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz1_3" title="Quiz 1 - Question 3">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Wireless communication enables ease of Mobility.</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_3_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_3_1">
+              <material>
+                <mattext texttype="text/html">True</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_3_2">
+              <material>
+                <mattext texttype="text/html">False</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_3_RL">QUE_quiz1_3_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz1_4" title="Quiz 1 - Question 4">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">All of the following are reasons why we need wireless systems except:</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_4_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_4_1">
+              <material>
+                <mattext texttype="text/html">Mobility</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_4_2">
+              <material>
+                <mattext texttype="text/html">Minimise required infrastructure</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_4_3">
+              <material>
+                <mattext texttype="text/html">Disaster recovery</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_4_4">
+              <material>
+                <mattext texttype="text/html">Limited spectrum</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_4_RL">QUE_quiz1_4_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz1_5" title="Quiz 1 - Question 5">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is NOT a key issue affecting wireless systems?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_5_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_5_1">
+              <material>
+                <mattext texttype="text/html">Wireless links are inherently complex</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_5_2">
+              <material>
+                <mattext texttype="text/html">Wireless links suffer from unfavorable channel characteristics</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_5_3">
+              <material>
+                <mattext texttype="text/html">There is a very limited spectrum for wireless communication</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_5_4">
+              <material>
+                <mattext texttype="text/html">Less susceptible to interception</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_5_RL">QUE_quiz1_5_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz1_6" title="Quiz 1 - Question 6">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Communication engineers are concerned with transmission and reception of signals.</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_6_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_6_1">
+              <material>
+                <mattext texttype="text/html">True</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_6_2">
+              <material>
+                <mattext texttype="text/html">False</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_6_RL">QUE_quiz1_6_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz1_7" title="Quiz 1 - Question 7">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is NOT part of the communication process?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_7_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_7_1">
+              <material>
+                <mattext texttype="text/html">Generation of message signal</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_7_2">
+              <material>
+                <mattext texttype="text/html">The description of message signal</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_7_3">
+              <material>
+                <mattext texttype="text/html">Coding of signal in form suitable for transmission</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_7_4">
+              <material>
+                <mattext texttype="text/html">Storing of the transmitted signal</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_7_RL">QUE_quiz1_7_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz1_8" title="Quiz 1 - Question 8">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is NOT an example of unguided media?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_8_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_8_1">
+              <material>
+                <mattext texttype="text/html">Microwave</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_8_2">
+              <material>
+                <mattext texttype="text/html">Radio wave</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_8_3">
+              <material>
+                <mattext texttype="text/html">coaxial</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_8_4">
+              <material>
+                <mattext texttype="text/html">Infrared</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_8_RL">QUE_quiz1_8_3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz1_9" title="Quiz 1 - Question 9">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is NOT an example of guided media?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_9_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_9_1">
+              <material>
+                <mattext texttype="text/html">fibre optic</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_9_2">
+              <material>
+                <mattext texttype="text/html">Microwave</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_9_3">
+              <material>
+                <mattext texttype="text/html">twisted pair</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_9_4">
+              <material>
+                <mattext texttype="text/html">coaxial</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_9_RL">QUE_quiz1_9_2</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz1_10" title="Quiz 1 - Question 10">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following are involved in establishing communication with the base station?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_10_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_10_1">
+              <material>
+                <mattext texttype="text/html">Forward control channel</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_10_2">
+              <material>
+                <mattext texttype="text/html">Reverse control channel</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_10_3">
+              <material>
+                <mattext texttype="text/html">Forward traffic channel</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_10_4">
+              <material>
+                <mattext texttype="text/html">All of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_10_RL">QUE_quiz1_10_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz1_11" title="Quiz 1 - Question 11">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Which of the following is NOT a component of a cellular system?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_11_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_11_1">
+              <material>
+                <mattext texttype="text/html">User</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_11_2">
+              <material>
+                <mattext texttype="text/html">Mobile station/unit</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_11_3">
+              <material>
+                <mattext texttype="text/html">Base station</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_11_4">
+              <material>
+                <mattext texttype="text/html">Mobile switching center</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_11_RL">QUE_quiz1_11_1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+
+    <item ident="QUE_quiz1_12" title="Quiz 1 - Question 12">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">The Nyquist bandwidth is used to determine the information carrying capacity of noisy channel. Which of the following is the correct representation of Nyquist bandwidth?</mattext>
+        </material>
+        <response_lid ident="QUE_quiz1_12_RL" rcardinality="Single">
+          <render_choice>
+            <response_label ident="QUE_quiz1_12_1">
+              <material>
+                <mattext texttype="text/html">True</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_12_2">
+              <material>
+                <mattext texttype="text/html">False</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_12_3">
+              <material>
+                <mattext texttype="text/html">C = 2*B</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_12_4">
+              <material>
+                <mattext texttype="text/html">C = 2B log2M</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_12_5">
+              <material>
+                <mattext texttype="text/html">C = B log2(1+SNR)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_12_6">
+              <material>
+                <mattext texttype="text/html">C = B log2(SNR)</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="2.0" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal case="Yes" respident="QUE_quiz1_12_RL">QUE_quiz1_12_4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    
+    <!-- Quiz 2 Questions -->
+    <item ident="q2_1" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">Oscilloscope</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Mixer</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Amplifier</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">Antenna</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">A</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following is not a component of a wireless communications system?</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_2" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">allow all signals to pass through</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">reject all signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">allow some signals and reject others</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">None of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">C</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>The function of a filter is to</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_3" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">Filter</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Amplitude</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Combiner</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">Mixer</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">D</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following best describes a device which combines 2 signals into a single output</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_4" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">The highest sum and the lowest</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Only the sum</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Only the difference</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">Both sum and difference frequencies</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">A</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>When you combine 2 signals to produce a single output, this output will have frequency range of</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_5" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">increase the amplitude of an RF signal</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">It is an active device</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">The output is an exact copy of the input but with a higher amplitude</mattext>
+              </material>
+            </response_label>
+            <response_label ident="QUE_quiz1_5_4">
+              <material>
+                <mattext texttype="text/plain">All of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">D</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>which of the following is true about an amplifier</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_6" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">How the system will be used</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Multiple user access</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Transmission direction</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">All of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">D</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+                       <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following must radio communication engineers take into consideration when designing a wireless system?</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_7" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">TDMA</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">FDMA</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">CDMA</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">All of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">D</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following is a multiple access technique?</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_8" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">Divides the frequency band into smaller frequency bands</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Used mainly in analogue systems</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">the user is assigned the entire frequency band for transmission</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">None of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">B</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following is TRUE about time division multiple access technique?</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_9" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">Divides the frequency band into smaller frequency bands</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Used mainly in analogue systems</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">the user is assigned the entire frequency band for transmission</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">None of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">C</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following is NOT true about frequency division multiple access technique?</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_10" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">the length of the code</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">direct sequence spread spectrum</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Number of chips in the code</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">All of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">C</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following determines the number of users who can share a channel using code division multiplexing technique?</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_11" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">Sends data in both directions at the same time</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Sends data in both directions but only one way at a time</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Forward traffic channel</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">None of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">D</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following is TRUE about simplex transmission?</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_12" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">Used by data networks</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Direct connection between caller and recipient</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Data transmissions are broken into packets</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">Each packet is sent independently</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">B</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following is TRUE about circuit switched systems?</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_13" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">Allows better utilization of the network</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Allows multiple computers to share the same channel</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">All of the above</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">None of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">D</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following is an advantage of packet switched systems?</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_14" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">True</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">False</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Neither True nor False</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">True under special circumstances</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">A</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>attenuation is the loss in signal strength</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_15" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">True</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">False</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Neither True nor False</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">True under special circumstances</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">A</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Electromagnetic Interference is also called noise</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_16" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">True</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">False</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Neither True nor False</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">True under special circumstances</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">A</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Electromagnetic Interference affects signal strength</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q2_17" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>cc_profile</fieldlabel>
+            <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">Filter</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Amplitude</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Combiner</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">Mixer</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">D</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following best describes a device which combines 2 signals into a single output</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <!-- Quiz 3 Questions -->
+    <item ident="q3_1" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">Electric waves</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Magnetic signals</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Electromagnetic waves</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">Electrical signals</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">C</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Wireless communications is based on which of the following?</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q3_2" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">3x108 kilometres per second</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">3x108 metres per second</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">3x108 miles per second</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">3x108 yards per second</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">B</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>The speed of light in vacuum is</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q3_3" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">True</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">False</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Only when used in TV remote control</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">None of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">A</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Infra-red is part of the electromagnetic spectrum</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q3_4" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">High frequencies</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Medium frequencies</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Low frequencies</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">None of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">C</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Long electromagnetic signals have</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q3_5" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">High frequencies</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Medium frequencies</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Low frequencies</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">None of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">A</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Short electromagnetic signals have</fieldentry>
+      </itemproc_extension>
+    </item>
+
+    <item ident="q3_6" maxattempts="1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>qmd_itemtype</fieldlabel>
+            <fieldentry>Multiple Choice</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="A">
+              <material>
+                <mattext texttype="text/plain">Radio waves</mattext>
+              </material>
+            </response_label>
+            <response_label ident="B">
+              <material>
+                <mattext texttype="text/plain">Microwaves</mattext>
+              </material>
+            </response_label>
+            <response_label ident="C">
+              <material>
+                <mattext texttype="text/plain">Infrared waves</mattext>
+              </material>
+            </response_label>
+            <response_label ident="D">
+              <material>
+                <mattext texttype="text/plain">All of the above</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">D</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="correct"/>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">0</setvar>
+          <displayfeedback feedbacktype="Response" linkrefid="incorrect"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="correct">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Correct!</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemfeedback ident="incorrect">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Incorrect.</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+      <itemproc_extension>
+        <fieldentry>Which of the following are used in wireless communication?</fieldentry>
+      </itemproc_extension>
+    </item>

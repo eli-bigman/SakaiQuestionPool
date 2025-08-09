@@ -9,11 +9,11 @@ def create_qti_structure():
     root = ET.Element('questestinterop')
     root.set('xmlns', 'http://www.imsglobal.org/xsd/ims_qtiasiv1p2')
     root.set('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')
-    root.set('xsi:schemaLocation', 'http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd')
+    root.set('xsi:schemaLocation', 'http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p2/ccv1p2_qtiasiv1p2p1_v1p0.xsd')
     
     return root
 
-def extract_questions_by_title(input_file, title_pattern, output_dir=None):
+def extract_questions_by_title(input_file, title_pattern, output_dir=None, debug=False):
     """
     Extract questions from XML file based on title pattern
     
@@ -21,31 +21,57 @@ def extract_questions_by_title(input_file, title_pattern, output_dir=None):
         input_file (str): Path to the input XML file
         title_pattern (str): Pattern to search for in titles (case-insensitive)
         output_dir (str): Directory to save extracted files (optional)
+        debug (bool): Enable debug output
     """
     try:
         # Parse the input XML file
         tree = ET.parse(input_file)
         root = tree.getroot()
         
-        # Find all sections and items that match the title pattern
-        matching_sections = []
+        if debug:
+            print(f"Root element: {root.tag}")
+            print(f"Root attributes: {root.attrib}")
+        
+        # Find all objectbanks and items that match the title pattern
         matching_items = []
         
-        # Search in sections
-        for section in root.findall('.//section'):
-            title = section.get('title', '')
-            if title_pattern.lower() in title.lower():
-                matching_sections.append(section)
-                print(f"Found matching section: {title}")
+        # Search in objectbanks for items
+        objectbanks = root.findall('.//objectbank')
+        if debug:
+            print(f"Found {len(objectbanks)} objectbanks")
         
-        # Search in individual items if no sections found
-        for item in root.findall('.//item'):
+        # Search in all items regardless of structure
+        items = root.findall('.//item')
+        if debug:
+            print(f"Found {len(items)} items total")
+            # Show first few items as sample
+            for i, item in enumerate(items[:5]):
+                title = item.get('title', '')
+                ident = item.get('ident', '')
+                print(f"Sample item {i+1}: '{title}' (ident: '{ident}')")
+        
+        for item in items:
             title = item.get('title', '')
             if title_pattern.lower() in title.lower():
                 matching_items.append(item)
+                if debug:
+                    print(f"Found matching item: {title}")
         
-        if not matching_sections and not matching_items:
-            print(f"No sections or items found with title containing '{title_pattern}'")
+        print(f"Found {len(matching_items)} matching items")
+        
+        if not matching_items:
+            print(f"No items found with title containing '{title_pattern}'")
+            
+            # Additional debugging - show all unique title patterns
+            all_titles = set()
+            for item in items:
+                title = item.get('title', '')
+                if title:
+                    all_titles.add(title)
+            
+            print(f"\nAll available titles ({len(all_titles)} unique):")
+            for title in sorted(all_titles):
+                print(f"  - {title}")
             return
         
         # Set output directory
@@ -55,96 +81,45 @@ def extract_questions_by_title(input_file, title_pattern, output_dir=None):
         # Ensure output directory exists
         Path(output_dir).mkdir(parents=True, exist_ok=True)
         
-        # Process matching sections
-        for section in matching_sections:
-            section_title = section.get('title', 'Unknown')
-            section_ident = section.get('ident', 'unknown_section')
+        # Group matching items by title pattern for better organization
+        grouped_items = {}
+        for item in matching_items:
+            title = item.get('title', 'Unknown')
+            # Extract common prefix for grouping (first few words)
+            title_parts = title.split()
+            if len(title_parts) >= 2:
+                group_key = ' '.join(title_parts[:2])  # Use first 2 words as group key
+            else:
+                group_key = title_parts[0] if title_parts else 'Miscellaneous'
             
+            if group_key not in grouped_items:
+                grouped_items[group_key] = []
+            grouped_items[group_key].append(item)
+        
+        # Create files for each group
+        for group_name, items_list in grouped_items.items():
             # Create new XML structure
             new_root = create_qti_structure()
             
-            # Create assessment element
-            assessment = ET.SubElement(new_root, 'assessment')
-            assessment.set('ident', f"{section_ident}_EXTRACTED")
-            assessment.set('title', f"Extracted: {section_title}")
+            # Create objectbank
+            objectbank = ET.SubElement(new_root, 'objectbank')
+            objectbank.set('ident', f"{group_name.replace(' ', '_').upper()}_BANK")
             
-            # Copy original metadata if exists
-            original_assessment = root.find('.//assessment')
-            if original_assessment is not None:
-                original_metadata = original_assessment.find('assessmentmetadata')
-                if original_metadata is not None:
-                    assessment.append(original_metadata)
-            
-            # Create object bank to contain items
-            objectbank = ET.SubElement(assessment, 'objectbank')
-            objectbank.set('ident', f"{section_ident}_BANK")
-            
-            # Add all items from the section to objectbank
-            items_found = 0
-            for item in section.findall('.//item'):
+            # Add items
+            for item in items_list:
                 # Create a deep copy of the item
                 new_item = ET.fromstring(ET.tostring(item))
                 objectbank.append(new_item)
-                items_found += 1
             
-            if items_found > 0:
-                # Generate filename
-                safe_title = "".join(c for c in section_title if c.isalnum() or c in (' ', '_', '-')).strip()
-                safe_title = safe_title.replace(' ', '_')
-                output_filename = f"{safe_title}.xml"
-                output_path = os.path.join(output_dir, output_filename)
-                
-                # Write to file
-                write_xml_file(new_root, output_path)
-                print(f"Extracted {items_found} items to: {output_path}")
-            else:
-                print(f"No items found in section: {section_title}")
-        
-        # Process individual matching items if no sections were found
-        if not matching_sections and matching_items:
-            # Group items by common title patterns
-            grouped_items = {}
-            for item in matching_items:
-                title = item.get('title', 'Unknown')
-                # Extract common prefix for grouping
-                title_parts = title.split()
-                if len(title_parts) >= 2:
-                    group_key = ' '.join(title_parts[:3])  # Use first 3 words as group key
-                else:
-                    group_key = title_parts[0] if title_parts else 'Miscellaneous'
-                
-                if group_key not in grouped_items:
-                    grouped_items[group_key] = []
-                grouped_items[group_key].append(item)
+            # Generate filename
+            safe_title = "".join(c for c in group_name if c.isalnum() or c in (' ', '_', '-')).strip()
+            safe_title = safe_title.replace(' ', '_')
+            output_filename = f"Questions_{safe_title}.xml"
+            output_path = os.path.join(output_dir, output_filename)
             
-            # Create files for each group
-            for group_name, items in grouped_items.items():
-                # Create new XML structure
-                new_root = create_qti_structure()
-                
-                # Create assessment element
-                assessment = ET.SubElement(new_root, 'assessment')
-                assessment.set('ident', f"EXTRACTED_{group_name.replace(' ', '_').upper()}")
-                assessment.set('title', f"Extracted: {group_name}")
-                
-                # Create object bank
-                objectbank = ET.SubElement(assessment, 'objectbank')
-                objectbank.set('ident', f"{group_name.replace(' ', '_').upper()}_BANK")
-                
-                # Add items
-                for item in items:
-                    new_item = ET.fromstring(ET.tostring(item))
-                    objectbank.append(new_item)
-                
-                # Generate filename
-                safe_title = "".join(c for c in group_name if c.isalnum() or c in (' ', '_', '-')).strip()
-                safe_title = safe_title.replace(' ', '_')
-                output_filename = f"Items_{safe_title}.xml"
-                output_path = os.path.join(output_dir, output_filename)
-                
-                # Write to file
-                write_xml_file(new_root, output_path)
-                print(f"Extracted {len(items)} items to: {output_path}")
+            # Write to file
+            write_xml_file(new_root, output_path)
+            print(f"Extracted {len(items_list)} items to: {output_path}")
     
     except ET.ParseError as e:
         print(f"Error parsing XML file: {e}")
@@ -166,7 +141,7 @@ def write_xml_file(root, output_path):
     tree.write(output_path, encoding='utf-8', xml_declaration=True)
 
 def list_available_titles(input_file, title_pattern=None):
-    """List all available section and item titles in the XML file"""
+    """List all available item titles in the XML file"""
     try:
         tree = ET.parse(input_file)
         root = tree.getroot()
@@ -174,35 +149,36 @@ def list_available_titles(input_file, title_pattern=None):
         print(f"\nAvailable titles in '{input_file}':")
         print("=" * 50)
         
-        # List section titles
-        sections = root.findall('.//section')
-        if sections:
-            print("\nSECTIONS:")
-            for section in sections:
-                title = section.get('title', 'No title')
-                ident = section.get('ident', 'No ident')
-                if title_pattern is None or title_pattern.lower() in title.lower():
-                    print(f"  - {title} (ident: {ident})")
-        
-        # List unique item title patterns
+        # List all items
         items = root.findall('.//item')
         if items:
             print(f"\nITEMS (Total: {len(items)}):")
-            title_patterns = set()
-            for item in items:
-                title = item.get('title', 'No title')
-                if title_pattern is None or title_pattern.lower() in title.lower():
-                    # Extract pattern (first few words)
-                    title_parts = title.split()
-                    if len(title_parts) >= 3:
-                        pattern = ' '.join(title_parts[:3])
-                    else:
-                        pattern = title
-                    title_patterns.add(pattern)
             
-            for pattern in sorted(title_patterns):
-                count = len([item for item in items if item.get('title', '').startswith(pattern)])
-                print(f"  - {pattern}... ({count} items)")
+            if title_pattern:
+                # Show only matching items
+                matching_items = []
+                for item in items:
+                    title = item.get('title', 'No title')
+                    if title_pattern.lower() in title.lower():
+                        matching_items.append(title)
+                
+                print(f"Items containing '{title_pattern}' ({len(matching_items)}):")
+                for title in sorted(set(matching_items)):
+                    count = matching_items.count(title)
+                    print(f"  - {title} ({count} items)")
+            else:
+                # Show all unique titles
+                all_titles = []
+                for item in items:
+                    title = item.get('title', 'No title')
+                    all_titles.append(title)
+                
+                unique_titles = set(all_titles)
+                for title in sorted(unique_titles):
+                    count = all_titles.count(title)
+                    print(f"  - {title} ({count} items)")
+        else:
+            print("\nNo items found in the file")
     
     except Exception as e:
         print(f"Error reading file: {e}")
@@ -214,17 +190,20 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Extract all questions with "DCIT 318" in the title
-  python extract_questions.py "DCIT 318" questions.xml
+  # Extract all questions with "DCIT 408" in the title
+  python extract_questions.py "DCIT 408" "DCIT 201 programming 1.xml"
   
   # Extract to specific directory
-  python extract_questions.py "DCIT 318" questions.xml -o extracted_questions/
+  python extract_questions.py "DCIT 408" "DCIT 201 programming 1.xml" -o extracted_questions/
   
   # List all available titles
-  python extract_questions.py --list questions.xml
+  python extract_questions.py --list "DCIT 201 programming 1.xml"
   
   # List titles containing specific pattern
-  python extract_questions.py --list questions.xml -p "DCIT"
+  python extract_questions.py --list "DCIT 201 programming 1.xml" -p "DCIT 408"
+  
+  # Debug mode to see what's happening
+  python extract_questions.py "DCIT 408" "DCIT 201 programming 1.xml" --debug
         """
     )
     
@@ -238,6 +217,8 @@ Examples:
                        help='List all available titles in the XML file')
     parser.add_argument('-p', '--pattern', dest='list_pattern',
                        help='Pattern to filter titles when listing (use with --list)')
+    parser.add_argument('--debug', action='store_true',
+                       help='Enable debug output to troubleshoot issues')
     
     args = parser.parse_args()
     
@@ -275,7 +256,7 @@ Examples:
     if args.output_dir:
         print(f"Output directory: {args.output_dir}")
     
-    extract_questions_by_title(args.input_file, args.title_pattern, args.output_dir)
+    extract_questions_by_title(args.input_file, args.title_pattern, args.output_dir, args.debug)
 
 if __name__ == "__main__":
     main()
